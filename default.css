@@ -2,36 +2,46 @@ header {
   float: top;
 }
 
+a:hover {
+  color: #8bbd84;
+}
+
 .nav {
   list-style: none;
-  display: inline-block;
+  display: inline;
 }
 
 .nav-reg{
   font-size: 1em;
   font-style: sans-serif;
+  color: #6f8aa8;
   margin: 2em 2em 2em 2em;
+  text-decoration: none;
 }
 
 #main-name {
   font-size: 2em;
   font-style: sans-serif;
+  color: 163961;
   margin: 2em 2em 2em 2em;
+  text-decoration: none;
 }
 
 #upcase {
-  font-size: 2.5em
+  font-size: 3em
+  color: 163961;
   font-style: sans-serif;
+  text-decoration: none;
 }
 
 .keyword-dev {
-  float: right;
+  float: left;
   width: 50%
   vertical-align: middle;
 }
 
 .keyword-create {
-  float: left;
+  float: right;
   width: 50%
   vertical-align: middle;
 }
