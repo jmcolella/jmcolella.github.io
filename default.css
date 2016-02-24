@@ -21,10 +21,6 @@ header {
   margin: .75em .75em .75em .75em;
 }
 
-a > span {
-  font-size: 4em;
-}
-
 a {
   text-decoration: none;
   color: #103d6f;
