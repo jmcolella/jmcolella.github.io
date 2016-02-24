@@ -1,6 +1,7 @@
 header {
   float: top;
   padding-top: 2em;
+  align-items: center;
 }
 
 .nav {
