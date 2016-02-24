@@ -2,8 +2,6 @@ header {
   float: top;
   padding-top: 2em;
   display: inline-block;
-  padding-left: 30%;
-  padding-right: 30%;
 }
 
 .nav {
@@ -39,7 +37,7 @@ a:hover {
 footer {
   clear: both;
   display: inline-block;
-  padding-top: 50%;
+  padding-top: 40em;
   padding-left: 18em;
 }
 
