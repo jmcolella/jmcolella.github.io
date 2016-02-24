@@ -1,62 +1,54 @@
 header {
   float: top;
-}
-
-a:hover {
-  color: #8bbd84;
+  padding-top: 2em;
 }
 
 .nav {
   list-style: none;
+}
+
+.nav li {
   display: inline;
-}
-
-.nav-reg{
   font-size: 1em;
-  font-style: sans-serif;
-  color: #6f8aa8;
-  margin: 2em 2em 2em 2em;
+  font-family: sans-serif;
+  margin: 1em 1em 1em 1em;
+}
+
+.nav #main-name {
+  font-size: 3em;
+  font-family: sans-serif;
+  margin: .75em .75em .75em .75em;
+}
+
+span {
+  font-size: 5em
+  font-family: sans-serif;
+}
+
+a {
   text-decoration: none;
 }
 
-#main-name {
-  font-size: 2em;
-  font-style: sans-serif;
-  color: 163961;
-  margin: 2em 2em 2em 2em;
-  text-decoration: none;
+a:visited {
+  color: #103d6f;
 }
 
-#upcase {
-  font-size: 3em
-  color: 163961;
-  font-style: sans-serif;
-  text-decoration: none;
-}
-
-.keyword-dev {
-  float: left;
-  width: 50%
-  vertical-align: middle;
-}
-
-.keyword-create {
-  float: right;
-  width: 50%
-  vertical-align: middle;
+a:hover {
+  color: #6fbf64;
 }
 
 footer {
-  float: bottom;
-  padding-bottom: 2em;
-  vertical-align: middle;
+  padding-top: em
   display: inline;
 }
 
-.button {
+footer > div {
   border-radius: 50%
+  padding: 20px;
+  margin: 20px;
   width: 20px;
   height: 20px;
+  color: black;
 }
 
 #git {
