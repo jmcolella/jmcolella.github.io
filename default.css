@@ -35,10 +35,10 @@ a:hover {
 }
 
 footer {
-  float: bottom;
   clear: both;
   display: inline-block;
-  padding-left: 20em;
+  padding-top: 70em;
+  padding-left: 18em;
 }
 
 footer > ul {
