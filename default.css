@@ -3,6 +3,10 @@ header {
   padding-top: 2em;
 }
 
+nav {
+  align-items: center;
+}
+
 .nav {
   list-style: none;
 }
