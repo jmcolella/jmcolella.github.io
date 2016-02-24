@@ -1,0 +1,66 @@
+header {
+  float: top;
+}
+
+.nav {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-reg{
+  font-size: 1em;
+  font-style: sans-serif;
+  margin: 2em 2em 2em 2em;
+}
+
+#main-name {
+  font-size: 2em;
+  font-style: sans-serif;
+  margin: 2em 2em 2em 2em;
+}
+
+#upcase {
+  font-size: 2.5em
+  font-style: sans-serif;
+}
+
+.keyword-dev {
+  float: right;
+  width: 50%
+  vertical-align: middle;
+}
+
+.keyword-create {
+  float: left;
+  width: 50%
+  vertical-align: middle;
+}
+
+footer {
+  float: bottom;
+  padding-bottom: 2em;
+  vertical-align: middle;
+  display: inline;
+}
+
+.button {
+  border-radius: 50%
+  width: 20px;
+  height: 20px;
+}
+
+#git {
+  color: black;
+}
+
+#linkedin {
+  color: white;
+}
+
+#facebook {
+  color: blue;
+}
+
+#mail {
+  color: grey;
+}
