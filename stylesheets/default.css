@@ -1,12 +1,14 @@
+
+
 header {
-  float: top;
-  padding-top: 2em;
-  padding-left: 10em;
-  display: inline-block;
+  padding-top: 1em;
 }
 
 .nav {
+  display: block;
   list-style: none;
+  text-align: center;
+  margin-right: 2em;
 }
 
 .nav li {
@@ -16,7 +18,7 @@ header {
   margin: 1em 1em 1em 1em;
 }
 
-.nav #main-name {
+h1 {
   font-size: 3em;
   font-family: sans-serif;
   margin: .75em .75em .75em .75em;
@@ -37,19 +39,26 @@ a:hover {
 
 footer {
   clear: both;
-  display: inline-block;
   padding-top: 40em;
-  padding-left: 28em;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  width:100%;
 }
 
 footer > ul {
+  display: block;
   list-style: none;
+  text-align: center;
+  margin-right: 4.5em;
 }
 
 .links li {
   display: inline;
   font-size: 1em;
   font-family: sans-serif;
-  margin: 1em 1em 1em 1em;
+  margin-right: 1em;
 }
 
