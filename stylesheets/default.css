@@ -55,6 +55,11 @@ footer > ul {
   margin-right: 4.5em;
 }
 
+.icon {
+  display: inline-block;
+  width: 5%;
+}
+
 .links li {
   display: inline;
   font-size: 1em;
@@ -62,8 +67,5 @@ footer > ul {
   margin-right: 1em;
 }
 
-.icon {
-  display: inline-block;
-  width: 0%;
-}
+
 
