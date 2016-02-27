@@ -1,0 +1,49 @@
+/*Need to fix background image for header*/
+
+header {
+  background-image: url(../imgs/blog-index-forest-temp-2.jpg);
+  background-position: -5px;
+}
+
+.top {
+  display: block;
+  position: relative;
+  margin-left: 10em;
+  color: #103d6f;
+}
+
+#top {
+  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+#sub-title {
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.blog-links {
+  list-style: none;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 6.5em;
+  border-top: 1px solid #103d6f;
+}
+
+.blog-links li {
+  margin: 1em;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  width:100%;
+}
+
+.links {
+  position: absolute;
+  margin-top: 5em;
+  list-style: none;
+  text-align: center;
+}
