@@ -1,0 +1,59 @@
+/*header {
+  background-image: url(../imgs/blog-index-forest-temp-2.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+}*/
+
+.font {
+    font-family: 'Ubuntu', sans-serif;
+    color: #103d6f;
+}
+
+.text-over {
+  margin-left: 8em;
+}
+
+main {
+  padding-top: .5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: .75em;
+}
+
+#line {
+  border-bottom: 1px solid #103d6f;
+  margin-left: 4.5em;
+}
+
+article {
+  margin-right: 6em;
+}
+
+.strong {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.links {
+  position: absolute;
+  margin-top: 5em;
+  list-style: none;
+  text-align: center;
+}
