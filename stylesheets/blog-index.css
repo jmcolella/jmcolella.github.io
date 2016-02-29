@@ -35,16 +35,4 @@
   margin: 1em;
 }
 
-.container {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  width:100%;
-}
 
-.links {
-  position: fixed;
-  bottom: 0;
-  list-style: none;
-  text-align: center;
-}
