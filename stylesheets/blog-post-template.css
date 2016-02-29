@@ -50,3 +50,16 @@ p {
   font-size: 1em;
   text-align: justify;
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  width:100%;
+}
+
+.links {
+  position: absolute;
+  margin-top: 5em;
+  list-style: none;
+  text-align: center;
+}
