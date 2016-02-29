@@ -50,10 +50,3 @@ p {
   font-size: 1em;
   text-align: justify;
 }
-
-.links {
-  position: absolute;
-  margin-top: 5em;
-  list-style: none;
-  text-align: center;
-}
