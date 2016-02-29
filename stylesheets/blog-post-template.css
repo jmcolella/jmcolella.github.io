@@ -53,13 +53,13 @@ p {
 
 .container {
   position: relative;
+  margin-top: 5em;
   text-align: center;
   width:100%;
 }
 
 .links {
   position: absolute;
-  margin-top: 15em;
   list-style: none;
   text-align: center;
 }
