@@ -46,7 +46,8 @@ a:hover {
 }
 
 .links {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   list-style: none;
   text-align: center;
 }
