@@ -1,3 +1,9 @@
+body {
+  background-image: url(../imgs/mountains-temp.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 header {
   padding-top: 1em;
   display: block;
