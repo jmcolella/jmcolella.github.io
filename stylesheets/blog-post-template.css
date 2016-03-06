@@ -5,6 +5,13 @@
   width: 100%;
 }*/
 
+body {
+  background-image: none;
+  background: linear-gradient(to left, rgba(157, 166, 176, 0), rgba(157, 166, 176, .35));
+  /*background: linear-gradient(#9DA6B0, white);*/
+}
+
+
 .font {
     font-family: 'Ubuntu', sans-serif;
     color: #103d6f;
