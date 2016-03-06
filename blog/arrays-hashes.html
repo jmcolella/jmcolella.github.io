@@ -51,11 +51,11 @@
         Whereas variables in Ruby point to a specific value, arrays point to a list, or collection, of values. An array is still considered an object like a variable, but it can hold more data and, therefore, do some more powerful things.
       </p>
       <p>
-        The array syntax is very simple. Let's take a look below at an array called my_array:
+        The array syntax is very simple. Let's take a look below at an array called <code>my_array</code>:
       </p>
       <code class="indent-code"> my_array = [1,2,3]</code>
       <p>
-        OK great! We've got an array. But wait, you must be wondering, what exactly is going on here? Well, let's break it down. As I mentioned above, I created a new array called my_array and assigned it, using the <code>=</code> sign, to a list of values. I chose the values 1, 2 and 3 as arbitrary values. An array can hold more or less than 3 values, it can even hold no values at all! As you can see, just like we assign a variable to a value, we use the same type of syntax to assign an array to a list of values, the only major difference is wrapping the list of values with brackets.
+        OK great! We've got an array. But wait, you must be wondering, what exactly is going on here? Well, let's break it down. As I mentioned above, I created a new array called <code>my_array</code> and assigned it, using the <code>=</code> sign, to a list of values. I chose the values 1, 2 and 3 as arbitrary values. An array can hold more or less than 3 values, it can even hold no values at all! As you can see, just like we assign a variable to a value, we use the same type of syntax to assign an array to a list of values, the only major difference is wrapping the list of values with brackets.
       </p>
       <p>
         What's really cool about arrays is that, if we want, we could access an individual value within the array by simply calling its index. Whenver an array is created, it also comes along with index values, each of which points to a specific location within the array. Unlike in the real world, where we start counting from 1, in the world of Ruby, we start counting from zero. So, the first value in an array has an index number of 0. The second value has an index number of 1 and so on and so forth. As I mentioned above, an array can be set to an empty list, and in that case, if you called the 0 index, you will return the value <code>nil</code>.
@@ -76,40 +76,56 @@
         The good thing is that hashes are incredibly similar to arrays in that they are an object that points to a list of values. The bad thing is that the syntax for hashes is completely different than for an array, however, we will see that maybe this way of storing values might be more beneficial for some complex programs.
       </p>
       <p>
-        Let's take a look at the hash syntax and then break it down. Here's our newly minted hash, my_hash:
+        Let's take a look at the hash syntax and then break it down. Here's our newly minted hash, <code>my_hash</code>:
       </p>
-      <code class="indent-code">my_hash = {
-        "Hello" => "Goodbye"
-        "First" => "Last"
-        "Big" => "Small"
-      } </code>
+      <code class="indent-code">my_hash = {</code>
+      <code class="indent-code"> "Hello" => "Goodbye",</code>
+      <code class="indent-code"> "First" => "Last",</code>
+      <code class="indent-code">  "Big" => "Small",</code>
+      <code class="indent-code"> } </code>
       <p>
-        Padding can be very useful when spacing elements that are close to each other, utilizing the white space immediatetly around each piece of content to create some space on the webpage and assist with positioning to create the design intended.
+        Alright, just like with an array, we are able to set <code>my_hash</code> equal to a list of values using the <code>=</code> operator. After that, things got a little cooky. So, let's look at the first line. We have "Hello" with some funny rocket-shaped synatx and then "Goodbye". First, let's tackle that funny syntax. That rocket-shaped thing is just a special way of saying equals; it's a special way to assign some value to something. Great, so now the syntax becomes a bit clearer: we have "Hello" equal to "Goodbye". How does Ruby know what each of these two strings are? Well, when you create a hash, Ruby knows that it will contain two major components: keys and values. Keys are set equal to a value and, vice vera, values are assigned to keys. In the hash syntax, the key always goes to the left of the <code>=></code> and the value always goes to the right. So, back to our first line in the hash, we created the key "Hello" and set it equal to "Goodbye". This can be applied to the other two rows: key "First" equals value "Last" and key "Big" equals value "Small".
+      </p>
+      <p>
+        The key/value pair feature of hashes is a really powerful tool. In a way, it is very similar to the relationship between index and value in an array. Let's look at some syntax below regarding the cool relationship between keys and values:
+      </p>
+      <code class="indent-code">my_hash["Hello"]</code>
+      <code class="indent-code">=> "Goodbye"</code>
+      <p>
+        Wow! Just like calling an index on an array and receiving the associated value, we can call a key on a hash and receive its associated value. This is very cool stuff and, as you could imagine, provides hashes with a lot more flexibility for a program than an array.
       </p>
     </section>
 
     <section class="text-over">
-      <h3 class="strong">Border</h3>
+      <h3 class="strong">Arrays and Hashes compared</h3>
       <p>
-        Next comes the border, which surrounds the padding layer and is used for basically stylistic reasons. The border layer, unlike the padding and margin layer, takes 3 different parameters: thickness, type and color. Thickness is very similar to setting the size of the padding, which can be adjusted in pixels or em. The higher the pixel or em number, the thicker, or bolder, the border will appear. In order for the border to appear, though, you need to set a type of border. The most common type of border is solid, which will display a solid line all around the padding of the content. You can also more stylized border types, like dashed, to create a unique look. And finally, if you don't want the default black border, you can adjust the color by inputting the specific nane, hex value, or rgb values to get the desired look. When writing this all our in CSS, you utilize the border selector and write out the three parameters as follows: thickness type color. No commas, no semi-colons, just spaces between each parameter.
+        So, why might hashes have more flexibility than an array? For me, it depends on the program, but hashes can be much more powerful when you're working with user input.
       </p>
       <p>
-        Just like with padding, the border can be set all around the element by simply using the border selector. However, if you want to fine tune the border for a particular side, or just want a border on one side of the element, you can use the -top, -bottom, -left and -right suffixes to accomplish that.
+        Let's look at a simple piece of code that takes a user's input regarding the tri-state area and returns a value:
       </p>
+      <code class="indent-code">
+        puts "Please enter the full name of a tri-state State and we'll give you the abbreviation!" </code>
+        <code class="indent-code">user_input = gets.chomp.downcase </code>
+
+        <code class="indent-code code-space">tri_state_abbr = { </code>
+        <code class="indent-code">    "new york" => "NY" </code>
+         <code class="indent-code">   "new jersey" => "NJ" </code>
+         <code class="indent-code">   "connecticut" => "CT" </code>
+        <code class="indent-code">} </code>
+
+        <code class="indent-code code-space">if user_input == "new york" </code>
+        <code class="indent-code block-indent">  puts tri_state_abbr["new york"] </code>
+        <code class="indent-code">elsif user_input == "new jersey" </code>
+        <code class="indent-code block-indent">  puts tri_state_abbr["new jersey"] </code>
+        <code class="indent-code">else </code>
+        <code class="indent-code block-indent">  puts tri_stat_abbr["connecticut"] </code>
+        <code class="indent-code">end </code>
       <p>
-        Padding can be very useful when spacing elements that are close to each other, utilizing the white space immediatetly around each piece of content to create some space on the webpage and assist with positioning to create the design intended.
+        OK, I get it. That was a bunch of random Ruby code you may not be familiar with. All told, we are first asking a user for the name of a state, they input their response, which get saved to the variable <code>user_input</code> then, based on the hash we created, we use an <code>if</code> statement to figure out what the user's input was and, based on that input, we call the appropriate value from the hash using that value's key.
       </p>
     </section>
 
-    <section class="text-over">
-      <h3 class="strong">Margin</h3>
-      <p>
-        Finally, we have the margin. This surrounds both the border and padding, with which it shares some similarities. While padding sets the white space around the content itself, the margin sets the white space around the element of the content. So, for this paragraph I'm writing, I am using a "p" tag HTML, so if I adjust the padding, that would effect the immediate white space around the text itself, and if I were to adjust the margin, that would effect the space around the "p" tag as a whole. The different between the text and the "p" tag is a bit ambiguous, but it makes a different within the HTML/CSS, particularly in relation to other elements on the page.
-      </p>
-      <p>
-        Since margin is the white space around an element, it is very useful for spacing and positioning, just like padding. Adjusting the margin of an element can help move an element in relation to it's nested parent or it's sibling within a nested parent. Just like padding, margin can be set on all sides of an element by using the maring selector, or can be fine tuned for each side using the suffixes mentioned above. Margin is a very powerful tool that can easily create space between elements or push over an element to fine tune positioning and help create the webpage layout you desire.
-      </p>
-    </section>
     <section class="text-over">
         <h3 class="strong">Conclusion</h3>
         <p>
