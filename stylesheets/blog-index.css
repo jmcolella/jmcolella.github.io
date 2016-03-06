@@ -5,6 +5,13 @@
   background-position: -5px;
 }*/
 
+body {
+  background-image: none;
+  background: linear-gradient(to left, rgba(157, 166, 176, 0), rgba(157, 166, 176, .35));
+  /*background: linear-gradient(#9DA6B0, white);*/
+
+}
+
 .top {
   display: block;
   position: relative;
