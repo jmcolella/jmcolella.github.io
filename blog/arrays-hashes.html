@@ -53,15 +53,25 @@
       <p>
         The array syntax is very simple. Let's take a look below at an array called my_array:
       </p>
-      <code> my_array = [1,2,3]</code>
+      <code class="indent-code"> my_array = [1,2,3]</code>
       <p>
         OK great! We've got an array. But wait, you must be wondering, what exactly is going on here? Well, let's break it down. As I mentioned above, I created a new array called my_array and assigned it, using the <code>=</code> sign, to a list of values. I chose the values 1, 2 and 3 as arbitrary values. An array can hold more or less than 3 values, it can even hold no values at all! As you can see, just like we assign a variable to a value, we use the same type of syntax to assign an array to a list of values, the only major difference is wrapping the list of values with brackets.
       </p>
-
+      <p>
+        What's really cool about arrays is that, if we want, we could access an individual value within the array by simply calling its index. Whenver an array is created, it also comes along with index values, each of which points to a specific location within the array. Unlike in the real world, where we start counting from 1, in the world of Ruby, we start counting from zero. So, the first value in an array has an index number of 0. The second value has an index number of 1 and so on and so forth. As I mentioned above, an array can be set to an empty list, and in that case, if you called the 0 index, you will return the value <code>nil</code>.
+      </p>
+      <p>
+        How would one go about calling an index in an array. Well, it's pretty simple. Let's take a look at the syntax below:
+      </p>
+      <code class="indent-code">my_array[1]</code>
+      <code class="indent-code">=> 2</code>
+      <p>
+        So, I used our array from above <code>my_array</code> and called the index 1, returing the value of 2 from our example above. This is almost like passing an argument through a method; in this case, we are passing the index one to the array and it will spit back the value associated with that index. This can be incredibly helpful when trying to locate a particular value or when iterating over an array and you only want to execute code for a certain portion of the array (which can be denoted using the index number).
+      </p>
     </section>
 
     <section class="text-over">
-      <h3 class="strong">Padding</h3>
+      <h3 class="strong">Hashes</h3>
       <p>
         Let's start with the first, innermost layer: padding. Padding resides in between the actual content itself and the border. By adjusting the padding, we can set the white space surrounding an element, which is very important with spacing and can add some style, particularly in conjunction with a border. For example, if we set a border with some padding, then that border will not rest on the content itself, but will be separate from it due to the padding space, which could be aestheticially pleasing.
       </p>
