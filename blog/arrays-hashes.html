@@ -122,14 +122,18 @@
         <code class="indent-code block-indent">  puts tri_stat_abbr["connecticut"] </code>
         <code class="indent-code">end </code>
       <p>
-        OK, I get it. That was a bunch of random Ruby code you may not be familiar with. All told, we are first asking a user for the name of a state, they input their response, which get saved to the variable <code>user_input</code> then, based on the hash we created, we use an <code>if</code> statement to figure out what the user's input was and, based on that input, we call the appropriate value from the hash using that value's key.
+        OK, I get it. That was a bunch of random Ruby code you may not be familiar with. All told, we are first asking a user for the name of a state, they input their response, which get saved to the variable <code>user_input</code> then, based on the hash we created, we use an <code>if</code> statement to figure out what the user's input was and, based on that input, we call the appropriate value from the hash using that value's key. Now, using a hash is really helpful in this situation. With hash key/value pairs, we can best approximate the exact input from the user. At no point would we ask the user to input a number and then use that number as an index to call on an array. It's much easier to ask the user for English words and then use that exact input as a key name to call a value in a hash. This idea stems from the inherent customization properties of the key/value pair in a hash. With an array, the index number is the index number; in other words, you can't change the name/number of the indexes in an array. Index 0 is always index 0 and so on and so forth. In a hash, however, we have the ability to create the names of each key as well as the substance of the associated value. Hashes give us an endless possibility for key names, which can really help us create an organization system for values that fits seamlessly with the goals of our program, like the one we wrote above.
+      </p>
+      <p>
+        If I can make the quickest of asides right at the end, without diving into too much detail, hashes are also different from arrays (and possibly better) because the keys in a hash can be written as Ruby symbols. This is an interesting point to mention for a few reasons. Symbols are different than other objects in Ruby in that they are unique, in Ruby terms. That means that if you create a symbol, that symbol will always have the same id, which is not the case for other Ruby objects. Symbols are also immutable, meaning you can't append anything to the symbol once it is created. What does this mean for arrays versus hashes? Well, symbols may not be a big advantage for hashes, but using sybmols as keys allow Ruby to process accessibility of a value faster and ensures that the keys for a hash can never be changed, unlike  string. Symbols as keys are just another feature of hashes that add to its general customization abilities, which is a big advantage over arrays.
+
       </p>
     </section>
 
     <section class="text-over">
         <h3 class="strong">Conclusion</h3>
         <p>
-          Alright, I think we learned a lot here. We learned about the box model, which describes that each HTML contains a series of layered boxes, margin, border and padding, each of which can be manipulated to create space, add style and positon elements. Utilizing these three parameters of the box model can take your CSS skills to the next level and make your websites that much more interesting.
+          So, arrays and hashes. Both are Ruby objects. Both contain lists of values. One is a little more strict in accessibility than the other, but, regardless, both are efficient and powerful ways of consolidating information and accessing that information for use in a Ruby program.
         </p>
       </section>
     </article>
