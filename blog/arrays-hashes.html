@@ -73,11 +73,16 @@
     <section class="text-over">
       <h3 class="strong">Hashes</h3>
       <p>
-        Let's start with the first, innermost layer: padding. Padding resides in between the actual content itself and the border. By adjusting the padding, we can set the white space surrounding an element, which is very important with spacing and can add some style, particularly in conjunction with a border. For example, if we set a border with some padding, then that border will not rest on the content itself, but will be separate from it due to the padding space, which could be aestheticially pleasing.
+        The good thing is that hashes are incredibly similar to arrays in that they are an object that points to a list of values. The bad thing is that the syntax for hashes is completely different than for an array, however, we will see that maybe this way of storing values might be more beneficial for some complex programs.
       </p>
       <p>
-        You can adjust the size of the padding on all sides of an element by just using the padding selector and inputing a value, whether it's in pixels, em, or a percentage. You can also adjust padding for any particularl side of an element by using the suffix -top, -bottom, -left and -right when using the padding selector.
+        Let's take a look at the hash syntax and then break it down. Here's our newly minted hash, my_hash:
       </p>
+      <code class="indent-code">my_hash = {
+        "Hello" => "Goodbye"
+        "First" => "Last"
+        "Big" => "Small"
+      } </code>
       <p>
         Padding can be very useful when spacing elements that are close to each other, utilizing the white space immediatetly around each piece of content to create some space on the webpage and assist with positioning to create the design intended.
       </p>

@@ -73,4 +73,5 @@ p {
 
 .indent-code {
   margin-left: 3em;
+  display: block;
 }
