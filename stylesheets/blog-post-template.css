@@ -70,3 +70,20 @@ p {
   list-style: none;
   text-align: center;
 }
+
+code {
+  color: black;
+}
+
+.indent-code {
+  margin-left: 3em;
+  display: block;
+}
+
+.code-space {
+  padding-top: 1em;
+}
+
+.block-indent {
+  margin-left: 4em;
+}
