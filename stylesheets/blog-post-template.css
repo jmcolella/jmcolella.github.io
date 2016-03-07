@@ -1,14 +1,6 @@
-/*header {
-  background-image: url(../imgs/blog-index-forest-temp-2.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 100%;
-}*/
-
 body {
   background-image: none;
-  background: linear-gradient(to left, rgba(157, 166, 176, 0), rgba(157, 166, 176, .35));
-  /*background: linear-gradient(#9DA6B0, white);*/
+  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
 }
 
 
@@ -22,7 +14,7 @@ body {
 }
 
 main {
-  padding-top: .5em;
+  padding-top: 2em;
 }
 
 h2 {
@@ -58,14 +50,14 @@ p {
   text-align: justify;
 }
 
-.container {
+.foot-container {
   position: relative;
   margin-top: 10em;
   text-align: center;
   width:100%;
 }
 
-.links {
+.foot-links {
   position: absolute;
   list-style: none;
   text-align: center;

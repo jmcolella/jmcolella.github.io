@@ -1,25 +1,20 @@
-/*Need to fix background image for header*/
-
-/*header {
-  background-image: url(../imgs/blog-index-forest-temp-2.jpg);
-  background-position: -5px;
-}*/
-
 body {
   background-image: none;
-  background: linear-gradient(to left, rgba(157, 166, 176, 0), rgba(157, 166, 176, .35));
-  /*background: linear-gradient(#9DA6B0, white);*/
+  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
+}
 
+main {
+  padding-top: 2em;
 }
 
 .top {
   display: block;
-  position: relative;
+  position: static;
   margin-left: 10em;
   color: #103d6f;
 }
 
-#top {
+#top-title {
   font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
