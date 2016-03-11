@@ -26,13 +26,37 @@ sub-title {
 
 .blog-links {
   list-style: none;
+  display: inline-block;
   font-family: 'Ubuntu', sans-serif;
-  margin-left: 2em;
+  padding-top: 2em;
+}
+
+#line {
   border-top: 1px solid #103d6f;
+  margin-left: 2em;
 }
 
 .blog-links li {
-  margin: 1em;
+  display: inline-block;
+  margin: 0em 3em 3em 3em;
+  padding: 3em;
+  border: 1px solid #6fbf64;
+  border-radius: 10%;
+  color: #6fbf64;
+  text-align: center;
+}
+
+.blog-links li:hover {
+  background-color: #6fbf64;
+  border: 1px solid white;
+}
+
+.blog-links li:visited {
+  color: white;
+}
+
+.blog-links li a:hover {
+  color: white;
 }
 
 
