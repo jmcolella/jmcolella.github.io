@@ -24,38 +24,41 @@ sub-title {
   font-family: 'Ubuntu', sans-serif;*/
 }
 
-.blog-links {
-  list-style: none;
-  display: inline-block;
-  font-family: 'Ubuntu', sans-serif;
-  padding-top: 2em;
-}
 
 #line {
   border-top: 1px solid #103d6f;
   margin-left: 2em;
 }
 
-.blog-links li {
-  display: inline-block;
+.blog-links {
+  /*list-style: none;*/
+  /*display: inline-block;*/
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 1em;
+  margin-left: 10em;
+  border-spacing: 3em;
+}
+
+.blog-links td {
+  /*display: inline-block;*/
   margin: 0em 3em 3em 3em;
   padding: 3em;
-  border: 1px solid #6fbf64;
-  border-radius: 10%;
+  border: 2px solid #6fbf64;
+  /*border-radius: 10%;*/
   color: #6fbf64;
   text-align: center;
 }
 
-.blog-links li:hover {
+.blog-links td:hover {
   background-color: #6fbf64;
-  border: 1px solid white;
+  border: 1px solid #6fbf64;
 }
 
-.blog-links li:visited {
+.blog-links tr:visited {
   color: white;
 }
 
-.blog-links li a:hover {
+.blog-links tr a:hover {
   color: white;
 }
 
