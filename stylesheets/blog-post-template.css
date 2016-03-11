@@ -10,20 +10,16 @@ body {
 }
 
 .text-over {
-  margin-left: 8em;
+  margin-left: 2em;
 }
 
 main {
   padding-top: 2em;
 }
 
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-}
 
 h3 {
-  font-size: 1em;
+  font-size: .75em;
 }
 
 h4 {
@@ -32,11 +28,13 @@ h4 {
 
 #line {
   border-bottom: 1px solid #103d6f;
-  margin-left: 4.5em;
+  margin-left: 2em;
 }
 
 article {
   margin-right: 6em;
+  margin-left: 2em;
+  padding-bottom: 1em;
 }
 
 .strong {
@@ -48,19 +46,6 @@ article {
 p {
   font-size: 1em;
   text-align: justify;
-}
-
-.foot-container {
-  position: relative;
-  margin-top: 10em;
-  text-align: center;
-  width:100%;
-}
-
-.foot-links {
-  position: absolute;
-  list-style: none;
-  text-align: center;
 }
 
 code {
@@ -79,3 +64,18 @@ code {
 .block-indent {
   margin-left: 4em;
 }
+
+/*Foot classes not longer applicable */
+.foot-container {
+ /* position: relative;
+  margin-top: 10em;
+  text-align: center;
+  width:100%;*/
+}
+
+.foot-links {
+/*  position: absolute;
+  list-style: none;
+  text-align: center;*/
+}
+
