@@ -10,31 +10,53 @@ main {
 .top {
   display: block;
   position: static;
-  margin-left: 10em;
+  margin-left: 2em;
   color: #103d6f;
 }
 
 #top-title {
-  font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
 }
 
-#sub-title {
-  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;
+/*sub-title used to be an id for a title underneath the Blog heading, but it has been commented out in the HTML*/
+sub-title {
+/*  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;*/
 }
 
 .blog-links {
   list-style: none;
-  font-size: 1em;
+  display: inline-block;
   font-family: 'Ubuntu', sans-serif;
-  margin-left: 6.5em;
+  padding-top: 2em;
+}
+
+#line {
   border-top: 1px solid #103d6f;
+  margin-left: 2em;
 }
 
 .blog-links li {
-  margin: 1em;
+  display: inline-block;
+  margin: 0em 3em 3em 3em;
+  padding: 3em;
+  border: 1px solid #6fbf64;
+  border-radius: 10%;
+  color: #6fbf64;
+  text-align: center;
+}
+
+.blog-links li:hover {
+  background-color: #6fbf64;
+  border: 1px solid white;
+}
+
+.blog-links li:visited {
+  color: white;
+}
+
+.blog-links li a:hover {
+  color: white;
 }
 
 

@@ -1,8 +1,13 @@
 body {
-  background-image: url(../imgs/mountains-temp.jpg);
+  /*Old CSS below, followed by new webkit CSS*/
+ /* background-image: url(../imgs/mountains-temp.jpg);
   background-repeat: no-repeat;
-  /*background-position: 0 0;*/
-  /*background-size: cover;*/
+  background-position: 0 0;*/
+  background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .head-container {
@@ -59,31 +64,33 @@ a:hover {
   color: #6fbf64;
 }
 
+/*Foot classes no longer applicable*/
+
 .foot-container {
-  position: fixed;
+  /*position: fixed;
   bottom: 0;
   text-align: center;
-  width:100%;
+  width:100%;*/
 }
 
 .foot-links {
-  position: fixed;
+ /* position: fixed;
   bottom: 0;
   width:100%;
-  text-align: center;
+  text-align: center;*/
 
 }
 
 .foot-links a {
-  text-align: center;
+ /* text-align: center;
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 2em;*/
 }
 
 .icon {
-  display: inline-block;
+  /*display: inline-block;
   width: 3em;
-}
+}*/
 
 
 

@@ -1,0 +1,48 @@
+body {
+  background-image: none;
+  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
+}
+
+.font {
+    font-family: 'Ubuntu', sans-serif;
+    color: #103d6f;
+}
+
+.text-over {
+  padding-top: 2em;
+  margin-left: 2em;
+}
+
+h2 {
+  /*font-size: 1em;*/
+}
+
+#line {
+  border-bottom: 1px solid #103d6f;
+  margin-left: 2em;
+}
+
+.social-buttons-container {
+  padding-top: 10em;
+  position: relative;
+  text-align: center;
+  width:100%;
+}
+
+.social-links {
+  position: relative;
+  width:100%;
+  text-align: center;
+
+}
+
+.social-links a {
+  text-align: center;
+  display: inline-block;
+  margin-right: 5em;
+}
+
+.icon {
+  display: inline-block;
+  width: 6em;
+}
