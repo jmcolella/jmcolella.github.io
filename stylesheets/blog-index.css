@@ -7,34 +7,13 @@ main {
   padding-top: 2em;
 }
 
-.top {
-  display: block;
-  position: static;
-  margin-left: 2em;
-  color: #103d6f;
-}
-
-#top-title {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-/*sub-title used to be an id for a title underneath the Blog heading, but it has been commented out in the HTML*/
-sub-title {
-/*  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;*/
-}
-
-
 #line {
   border-top: 1px solid #103d6f;
   margin-left: 2em;
 }
 
 .blog-links {
-  /*list-style: none;*/
-  /*display: inline-block;*/
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 1em;
   margin-left: 10em;
   border-spacing: 3em;
 }
@@ -63,3 +42,19 @@ sub-title {
 }
 
 
+/*Entire header section has been removed*/
+/*.top {
+  display: block;
+  position: static;
+  margin-left: 2em;
+  color: #103d6f;
+}
+
+#top-title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+sub-title {
+/*  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;*/
+/*}*/

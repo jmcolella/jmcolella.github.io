@@ -8,16 +8,6 @@ body {
     color: #103d6f;
 }
 
-.text-over {
-  padding-top: 2em;
-  margin-left: 2em;
-}
-
-#line {
-  border-bottom: 1px solid #103d6f;
-  margin-left: 2em;
-}
-
 #address {
   position: relative;
   text-align: center;
@@ -26,7 +16,7 @@ body {
   color: #103d6f;
   font-size: 1.75em;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 4em;
   width: 20em;
 }
 
@@ -55,3 +45,14 @@ body {
   display: inline-block;
   width: 4em;
 }
+
+/*Used to have a header that was removed*/
+/*.text-over {
+  padding-top: 2em;
+  margin-left: 2em;
+}
+
+#line {
+  border-bottom: 1px solid #103d6f;
+  margin-left: 2em;
+}*/

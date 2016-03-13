@@ -57,6 +57,16 @@ code {
   display: block;
 }
 
+.indent-code-level-1 {
+  margin-left: 4em;
+  display: block;
+}
+
+.indent-code-level-2 {
+  margin-left: 5em;
+  display: block;
+}
+
 .code-space {
   padding-top: 1em;
 }
