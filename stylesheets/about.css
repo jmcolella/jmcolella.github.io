@@ -1,0 +1,37 @@
+body {
+  background-image: none;
+  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
+}
+
+#image {
+  display: block;
+  position: relative;
+  margin-top: 2em;
+}
+
+img {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  width: 25%;
+  margin: auto;
+}
+
+.font {
+    font-family: 'Ubuntu', sans-serif;
+    color: #103d6f;
+}
+
+#head-text {
+  font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  color: #6fbf64;
+  border-bottom: 1px solid #103d6f;
+}
+
+#about-text {
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: justify;
+}

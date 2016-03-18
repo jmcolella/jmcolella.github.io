@@ -64,6 +64,19 @@ a:hover {
   color: #6fbf64;
 }
 
+
+/*Sub Header no longer applicable*/
+/*#sub-head {
+  display: block;
+  position: relative;
+  font-size: 5em;
+  font-family: 'Ubuntu', sans-serif;
+  color: #6fbf64;
+  text-shadow: 2px 2px #103d6f;
+  text-align: center;
+  margin-top: 2.5em;
+}*/
+
 /*Foot classes no longer applicable*/
 
 .foot-container {
