@@ -4,16 +4,19 @@ body {
 }
 
 #image {
-  display: block;
-  position: relative;
+  display: inline-block;
+  position: fixed;
+  float: left;
+  width: 35%;
   margin-top: 2em;
+  margin-left: 3em;
+  text-align: center;
 }
 
 img {
   display: block;
-  position: relative;
   border-radius: 50%;
-  width: 25%;
+  width: 75%;
   margin: auto;
 }
 
@@ -22,16 +25,32 @@ img {
     color: #103d6f;
 }
 
+.text {
+  display:inline-block;
+  position: relative:;
+  float: right;
+  width: 49%;
+  border: 2px solid #6fbf64;
+  margin-right: 9em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+
 #head-text {
   font-weight: bolder;
   font-size: 1.5em;
   text-align: center;
   color: #6fbf64;
-  border-bottom: 1px solid #103d6f;
+  /*border-bottom: 1px solid #103d6f;*/
 }
 
 #about-text {
   margin-left: 5em;
   margin-right: 5em;
   text-align: justify;
+}
+
+strong {
+  color: #6fbf64;
 }
