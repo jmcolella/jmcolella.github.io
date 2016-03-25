@@ -1,6 +1,6 @@
 body {
   background-image: none;
-  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
+  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
 }
 
 .font {
@@ -8,20 +8,83 @@ body {
     color: #103d6f;
 }
 
-#address {
-  position: relative;
-  text-align: center;
+
+fieldset {
   border: 2px solid #6fbf64;
-  font-family: 'Oxygen', sans-serif;
-  color: #103d6f;
-  font-size: 1.75em;
+  width: 40em;
   margin: auto;
   margin-top: 4em;
-  width: 20em;
 }
 
+fieldset > legend {
+  color: #103d6f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+fieldset > .input-field {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 2em;
+  width: 20em;
+  border: 1px solid #6fbf64;
+}
+
+fieldset > textarea {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 10em;
+  width: 20em;
+  border: 1px solid #6fbf64;
+  /*color: #103d6f;*/
+  font-family: 'Oxygen', sans-serif;
+}
+
+#send-button {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 3em;
+  width: 5em;
+  border: 1px solid #6fbf64;
+  background-color: white;
+  color: #103d6f;
+  font-family: 'Oxygen', sans-serif;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #6fbf64;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+   /*color: #103d6f;*/
+   font-family: 'Oxygen', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   /*color: #103d6f;*/
+   font-family: 'Oxygen', sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   /*color: #103d6f;*/
+   font-family: 'Oxygen', sans-serif;
+}
+
+:-ms-input-placeholder {
+   /*color: #103d6f;*/
+   font-family: 'Oxygen', sans-serif;
+}
+
+
 .social-buttons-container {
-  padding-top: 5em;
+  padding-top: 2em;
   position: relative;
   margin: auto;
   text-align: center;
@@ -46,13 +109,16 @@ body {
   width: 4em;
 }
 
-/*Used to have a header that was removed*/
-/*.text-over {
-  padding-top: 2em;
-  margin-left: 2em;
-}
 
-#line {
-  border-bottom: 1px solid #103d6f;
-  margin-left: 2em;
+/*#address {
+  position: relative;
+  text-align: center;
+  border: 2px solid #6fbf64;
+  font-family: 'Oxygen', sans-serif;
+  color: #103d6f;
+  font-size: 1.75em;
+  margin: auto;
+  margin-top: 4em;
+  width: 20em;
 }*/
+

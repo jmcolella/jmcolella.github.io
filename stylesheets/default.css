@@ -3,7 +3,7 @@ body {
  /* background-image: url(../imgs/mountains-temp.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;*/
-  background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
+background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -64,46 +64,6 @@ a:hover {
   color: #6fbf64;
 }
 
-
-/*Sub Header no longer applicable*/
-/*#sub-head {
-  display: block;
-  position: relative;
-  font-size: 5em;
-  font-family: 'Ubuntu', sans-serif;
-  color: #6fbf64;
-  text-shadow: 2px 2px #103d6f;
-  text-align: center;
-  margin-top: 2.5em;
-}*/
-
-/*Foot classes no longer applicable*/
-
-.foot-container {
-  /*position: fixed;
-  bottom: 0;
-  text-align: center;
-  width:100%;*/
-}
-
-.foot-links {
- /* position: fixed;
-  bottom: 0;
-  width:100%;
-  text-align: center;*/
-
-}
-
-.foot-links a {
- /* text-align: center;
-  display: inline-block;
-  margin-right: 2em;*/
-}
-
-.icon {
-  /*display: inline-block;
-  width: 3em;
-}*/
 
 
 

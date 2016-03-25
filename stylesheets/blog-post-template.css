@@ -1,6 +1,6 @@
 body {
   background-image: none;
-  background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));
+  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
 }
 
 
@@ -14,21 +14,34 @@ body {
 }
 
 main {
-  padding-top: 2em;
+  margin-top: 2em;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-bottom: 2em;
+  border: 2px solid #6fbf64;
 }
 
+.header {
+  text-align: center;
+  color: #6fbf64;
+}
+
+h2 {
+  font-size: 2em;
+}
 
 h3 {
   font-size: .75em;
+  color: #103d6f;
 }
 
 h4 {
   font-size: .75em;
+  color: #103d6f;
 }
 
 #line {
-  border-bottom: 1px solid #103d6f;
-  margin-left: 2em;
+  border-bottom: 1px solid #6fbf64;
 }
 
 article {
