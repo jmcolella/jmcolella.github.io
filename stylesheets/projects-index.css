@@ -1,0 +1,39 @@
+body {
+  background-image: none;
+  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
+}
+
+main {
+  padding-top: 2em;
+}
+
+.project-links {
+  font-family: 'Ubuntu', sans-serif;
+  margin: auto;
+  border-spacing: 3em;
+}
+
+.project-links td {
+  margin: 0em 3em 3em 3em;
+  padding: 3em;
+  border: 2px solid #6fbf64;
+  color: #6fbf64;
+  text-align: center;
+}
+
+.project-links td:hover {
+  background-color: #6fbf64;
+  border: 1px solid #6fbf64;
+}
+
+.project-links tr:visited {
+  color: white;
+}
+
+.project-links tr a:hover {
+  color: white;
+}
+
+.project-links span {
+  font-size: .5em;
+}
