@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+  <title>John Colella | Blog Post </title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu%7COxygen:400,700' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post-template.css">
+</head>
+
+<body>
+
+ <header class="head-container">
+     <nav>
+      <h1><a href="../index.html"><span class="upcase">J</span>ohn <span class="upcase">C</span>olella</a></h1>
+      <ul class="head-links">
+        <li class="nav-reg"><a href="../index.html">Home</a></li>
+        <li class="nav-reg"><a href="#">Resume</a></li>
+        <li class="nav-reg"><a href="#">Projects</a></li>
+        <li class="nav-reg"><a href="../blog/index.html">Blog</a></li>
+        <li class="nav-reg"><a href="../about.html">About</a></li>
+        <li class="nav-reg"><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+ </header>
+
+ <main>
+
+    <section class="header font">
+      <h2>DBC | Week 7 Post</h2>
+      <h3>In which I discuss Ruby classes and JavaScript constructor functions</h3>
+      <h4>March 26, 2016</h4>
+    </section>
+
+    <section id="line"></section>
+
+  <article class="font">
+    <section class="text-over">
+      <h3 class="strong">Introduction</h3>
+      <p>
+        Last week, I went into a <a href="ruby-classes.html">lengthy discussion</a> on Ruby classes. We got to see the syntax of Ruby classes and how to create an instance of that class, plus we explored how to incorporate instance variables and instance methods to make our classes really robust. This week, we're going to continue talking about Ruby classes, but this time within the context of JavaScript constructor functions.  As we'll see, these concepts are at the same time very similar and completely different. Let's dive in...
+      </p>
+    </section>
+
+    <section class="text-over">
+      <h3 class="strong">Ruby class</h3>
+      <p>
+        Quick recap from last week: Ruby classes are objects that allow a programmer to consolidate variables and methods to be used on any future instance of that class. You can think of a Ruby class like a constitution of sorts for any instance object of that class; whatever is written within the Ruby class is all that any object of that class can do. For example, if we call an instance method on an object whose class does not have that method written out, then Ruby won't know what to do and will return an error.
+      </p>
+      <p>
+        Let's make a fairly fleshed out class to get a better idea of how Ruby classes and their instance objects work. Ruby classes are cool because they can, in a weird way, mimic real-world objects. Going off that thought, let's make a Ruby class that mimics a music library. Check it out below:
+      </p>
+      <p>
+       <code class="indent-code">class Music_library</code>
+      </p>
+      <p>
+       <code class="indent-code-level-1">def initialize(library_name)</code>
+       <code class="indent-code-level-2">@library_name = library_name</code>
+       <code class="indent-code-level-2">@library = Hash.new</code>
+       <code class="indent-code-level-1">end</code>
+      </p>
+      <p>
+       <code class="indent-code-level-1">def add(artist_name, song_name)</code>
+       <code class="indent-code-level-2">@library[artist_name] = song_name</code>
+       <code class="indent-code-level-1">end</code>
+      </p>
+      <p>
+       <code class="indent-code-level-1">def print_library</code>
+       <code class="indent-code-level-2">p @library_name</code>
+       <code class="indent-code-level-2">@library.each {|artist, song| p "#{artist}: #{song}"}</code>
+       <code class="indent-code-level-1">end</code>
+      </p>
+      <p>
+       <code class="indent-code">end</code>
+      </p>
+      <p>
+        Alright, there's our music library class! We've got a method to initialize the instance object with a library name, then we have methods to add songs to our library and to print out all the songs in our library. Let's see this class in action:
+      </p>
+        <code class="indent-code">john_library = Music_library.new("John's Music Library")</code>
+        <code class="indent-code">john_library.add("Led Zeppelin", "Good Times Bad Times")</code>
+        <code class="indent-code">john_library.add("The Jimi Hendrix Experience", "Fire")</code>
+        <code class="indent-code">john_library.add("The Beatles", "Happiness is a Warm Gun")</code>
+        <code class="indent-code">john_library.print_library</code>
+        <code class="indent-code">=>"John's Music Library"</code>
+        <code class="indent-code">=>"Led Zeppelin: Good Times Bad Times"</code>
+        <code class="indent-code">=>"The Jimi Hendrix Experience: Fire"</code>
+        <code class="indent-code">=>"The Beatles: Happiness is a Warm Gun"</code>
+      <p>
+        Other than this class being incredibly inefficient (for one, it forces us to add artist/song pairs one at a time, that's kind of annoying), we have successfully used Ruby classes to create music libraries! In our example above, we created a new instance of the class <code>john_library</code> and gave it a name plus a few rocking songs using the <code>add</code> method, which we defined within the class. What happens, though, if we don't like a song and want to remove it? Well, we can't really do that since we haven't defined any method in the <code>Music_library</code> class that can remove an item from our music library. We could certainly add that in and give our class that functionality, but this is an example of how an instance object can't act on a method its class does not contain.
+      </p>
+    </section>
+
+    <section class="text-over">
+      <h3 class="strong">JavaScript Constructor Functions</h3>
+      <p>
+        OK, so now that we understand how to create a Ruby class and how that class interacts with its instance objects, let's move on to JavaScript and talk about its constructor functions.
+      </p>
+      <p>
+        Constructor functions in JavaScript are somewhat similar to Ruby classes, that's why we are talking about them together. The major differences involve syntax and what that means within the context of each language. Like in Ruby, JavaScript constructor functions are treated as objects that can spawn instance objects. Whereas Ruby classes have things called methods and variables, JavaScript constructor functions don't have those, or at least not in the sense that Ruby does. JavaScript functions are made up of property/value pairs and, in a way, look somewhat similar to a Ruby hash. These property/value pairs, though, are pretty powerful, allowing you to have properties with functions as values or even have other objects as values. This syntax structure in JavaScript allows for constructor functions to be as robust as Ruby classes. Let's look below at our music library Ruby class, but this time as a JavaScript constructor function.
+      </p>
+      <code class="indent-code">function musicLibrary(libraryName) {</code>
+      <code class="indent-code-level-1">this.libraryName = libraryName;</code>
+      <code class="indent-code-level-1">this.library = {};</code>
+      <code class="indent-code-level-1">this.add = function(artistName, songName) {</code>
+      <code class="indent-code-level-2">this.library[artistName] = songName;</code>
+      <code class="indent-code-level-1">};</code>
+      <code class="indent-code-level-1">this.print = function() {</code>
+      <code class="indent-code-level-2">console.log(this.libraryName);</code>
+      <code class="indent-code-level-2">console.log(this.library);</code>
+      <code class="indent-code-level-1">};</code>
+      <code class="indent-code">};</code>
+
+      <p>
+        Alright, that's a whole lot of new syntax. Let's break this constructor function down in relation to the Ruby class. On the first line, we are defining the actual name of our constructor function, <code>musicLibrary</code> and initializing it with one argument, that of "libraryName". So, right off the bat, this is a very different way to write out the <code>initialize</code> method in our Ruby class. Also notice that the constructor function is actually defined as <code>function</code> in JavaScript; this would almost be like using the <code>def</code> keyword in Ruby for a class, as if it were a method.
+      </p>
+      <p>
+        Next, we have some interesting syntax, particularly the <code>this.</code>. Simply put, that is JavaScripts way of writing out each property in our constructor function. No matter if the property simply equals a value or a function or an object, each property name is preceded with <code>this.</code>. This contrasts with JavaScript literal objects, which don't use the <code>this.</code> and also use colons to separate property/value, rather than the equals sign in the constructor function. So, the first line within the function is simply: we have a property <code>libraryName</code> set equal to the value of our input argument. The next line creates another new property, but this property is set equal to an empty object, denoted by the curly braces.
+      </p>
+      <p>
+        After that, we have two functions, which will use and manipulate our previous two properties. The first function is called <code>add</code>, which takes in two arguments and adds them to our <code>library</code> literal object. This is very similar to our <code>add</code> method from our Ruby class, since both are taking an some input and adding it to a container within the class/function to hold on to that information. While in Ruby we put that information into a hash, in JavaScript we are putting that information into a literal object. Our second function is simply printing to the console (that's where the <code>console.log</code> syntax comes in) the name of our music library and the list of our input music.
+      </p>
+      <p>
+        As I'm sure you noticed, we didn't make use of anything that might look like an instance variable from Ruby. You must be wondering, then, how does the JavaScript constructor function know how to store and use values in different parts of the function? Well, that's another nifty trick to the <code>this.</code> notation; once we save a value to a property using that notation, we just simply have to use that syntax when referencing the property again to get at that value. For example, take a look at <code>this.library</code>. We call it initially to create the blank object, then we use that syntax again when adding artists/songs to the library. JavaScript knows what property is being reference because of that syntax. To me, <code>this.</code> a little more confusing than the instance variables in Ruby, but it accomplishes the same thing with no problem.
+      </p>
+      <p>
+        OK, now that we broke down the constructor function, let's look at how it interacts with an instance object. Thankfully, this part doesn't deviate so far from Ruby.
+      </p>
+        <code class="indent-code">var johnLibrary = new musicLibrary("John's Music Library")</code>
+        <code class="indent-code">johnLibrary.add("Led Zeppelin", "Good Times Bad Times")</code>
+        <code class="indent-code">johnLibrary.add("The Jimi Hendrix Experience", "Fire")</code>
+        <code class="indent-code">johnLibrary.add("The Beatles", "Happiness is a Warm Gun")</code>
+        <code class="indent-code">johnLibrary.print()</code>
+        <code class="indent-code">=>"John's Music Library"</code>
+        <code class="indent-code">=>{ "Led Zeppelin": "Good Times Bad Times"</code>
+        <code class="indent-code">=>"The Jimi Hendrix Experience": "Fire"</code>
+        <code class="indent-code">=>"The Beatles": "Happiness is a Warm Gun" }</code>
+
+        <p>
+          Ah, now that syntax is more like it! When outside of the constructor function, we no longer need to use the <code>this.</code> notation, and just simply call the name of the function, such as <code>add</code> and <code>print</code> to the name of the instance object, and that function will be executed. The only thing that looks a big funky is create the instance object, which occurs on line one. Unlike Ruby, JavaScript has a keyword <code>var</code> that is necessary to create a new variable. So, we created the new variable <code>johnLibrary</code> and set it equal to a new <code>musicLibrary</code> with an argument for the name of the library. Then we subsequently called the functions from the constructor function on the instance object <code>johnLibrary</code> to populate the music library and then print it to the console.
+        </p>
+    </section>
+
+    <section class="text-over">
+        <h3 class="strong">Conclusion</h3>
+        <p>
+          So, Ruby classes and JavaScript constructor functions. Both work to consolidate methods/functions and variables/properties in one place, which can be accessed by instance objects of each. Both are useful for creating a network of actions and variables that you want to access multiple times for many different instance objects. In our music library example, what if I want to make a library for every person in my family? I don't want to have to write out all of these methods/functions over and over again for each family member. Rather, I can just write all of this out once as a class or constructor function (depending on the language) and then create instance objects for each family member to create their music libraries. This post just scratches the surface on Ruby classes and JavaScript constructor functions. Feel free to explore both the Ruby Docs and the Mozilla Developer Network to get more information.
+        </p>
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>
