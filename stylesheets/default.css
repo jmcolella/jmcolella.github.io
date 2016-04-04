@@ -1,9 +1,5 @@
 body {
-  /*Old CSS below, followed by new webkit CSS*/
- /* background-image: url(../imgs/mountains-temp.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;*/
-background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
+  background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +18,7 @@ background: url(../imgs/mountains-temp.jpg) no-repeat fixed;
 }
 
 nav {
-  overflow: auto
+  overflow: auto;
 }
 
 h1 {
@@ -50,7 +46,6 @@ h1 {
   margin: 1em 1em 1em 1em;
 }
 
-
 a {
   text-decoration: none;
   color: #103d6f;
@@ -64,6 +59,18 @@ a:hover {
   color: #6fbf64;
 }
 
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: .75em;
+  }
+  .head-links {
+    top: -.5em;
+  }
+  .head-links li {
+    font-size: .25em;
+    margin: .25em .25em .25em .25em;
+  }
+}
 
 
 

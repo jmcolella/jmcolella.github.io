@@ -3,7 +3,6 @@ body {
   /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
 }
 
-
 .font {
     font-family: 'Ubuntu', sans-serif;
     color: #103d6f;
@@ -18,7 +17,7 @@ body {
   float: right;
   margin-right: 6em;
   margin-top: 1em;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 
 .post-nav ul {
@@ -113,17 +112,72 @@ code {
   margin-left: 4em;
 }
 
-/*Foot classes not longer applicable */
-.foot-container {
- /* position: relative;
-  margin-top: 10em;
-  text-align: center;
-  width:100%;*/
+@media screen and (max-width: 450px) {
+  .text-over {
+    margin-left: 0em;
+  }
+  main {
+    margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  article {
+    margin-right: 2em;
+  }
+  .header {
+    text-align: center;
+    margin: auto;
+  }
+  .media {
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    font-size: .75em;
+  }
+  h3 {
+    font-size: .5em;
+  }
+  h4 {
+    font-size: .5em;
+  }
+  p {
+    font-size: .5em;
+  }
+  .strong {
+    font-size: .75em;
+  }
+  code {
+    font-size: .5em;
+  }
+  .indent-code {
+    margin-left: 1em;
+  }
+  .indent-code-level-1 {
+    margin-left: 2em;
+  }
+  .indent-code-level-2 {
+    margin-left: 3em;
+  }
+  img {
+    height: 50%;
+    width: 50%;
+  }
+  .post-nav {
+    font-size: .5em;
+    margin-right: 1em;
+  }
 }
 
-.foot-links {
-/*  position: absolute;
-  list-style: none;
-  text-align: center;*/
-}
+@media screen and (max-width: 800px) {
 
+  main {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .post-nav {
+    font-size: .5em;
+    margin-right: 2em;
+  }
+}
