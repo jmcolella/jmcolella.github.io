@@ -8,7 +8,6 @@ body {
     color: #103d6f;
 }
 
-
 fieldset {
   border: 2px solid #6fbf64;
   width: 40em;
@@ -109,16 +108,39 @@ fieldset > textarea {
   width: 4em;
 }
 
+@media only screen and (max-width: 750px) and (min-width: 451px) {
+  fieldset {
+    width: 30em;
+  }
+  .social-links a {
+    margin-right: 1em;
+  }
+  .icon {
+    width: 3em;
+  }
+}
 
-/*#address {
-  position: relative;
-  text-align: center;
-  border: 2px solid #6fbf64;
-  font-family: 'Oxygen', sans-serif;
-  color: #103d6f;
-  font-size: 1.75em;
-  margin: auto;
-  margin-top: 4em;
-  width: 20em;
-}*/
+@media only screen and (max-width: 450px) and (min-width: 330px) {
+  fieldset {
+    width: 18em;
+  }
+  .social-links a {
+    margin-right: 1em;
+  }
+  .icon {
+    width: 2em;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+    fieldset {
+    width: 10em;
+  }
+  .social-links a {
+    margin-right: 1em;
+  }
+  .icon {
+    width: 2em;
+  }
+}
 
