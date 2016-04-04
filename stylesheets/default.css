@@ -72,6 +72,16 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 750px) and (min-width: 451px) {
+    h1 {
+    font-size: 1.25em;
+  }
+  .head-links li {
+    font-size: .5em;
+    margin: .25em .25em .25em .25em;
+  }
+}
+
 
 
 
