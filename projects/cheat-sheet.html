@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <head>
-  <title>John Colella | JavaScript Cheat Sheet</title>
+  <title>Cheat Sheet | JavaScript</title>
   <meta charset="UTF-8">
   <link href='https://fonts.googleapis.com/css?family=Ubuntu%7COxygen:400,700' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
 </head>
 
 <body>
 
- <header class="head-container">
-     <nav>
-      <h1><a href="../index.html">John Colella</a></h1>
-      <ul class="head-links">
-        <li class="nav-reg"><a href="../index.html">Home</a></li>
-        <li class="nav-reg"><a href="#">Resume</a></li>
-        <li class="nav-reg"><a href="../projects/index.html">Projects</a></li>
-        <li class="nav-reg"><a href="../blog/index.html">Blog</a></li>
-        <li class="nav-reg"><a href="../about.html">About</a></li>
-        <li class="nav-reg"><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
+ <header class="head-container font">
+    <h2>Cheat Sheet | JavaScript</h2>
+    <h3>A quick reference for JavaScript objects and prototypes</h3>
  </header>
 
  <main>
 
-    <section class="header font">
-      <h2>Cheat Sheet | JavaScript</h2>
-      <h3>A quick reference for JavaScript objects and prototypes</h3>
-    </section>
-
-    <section id="line"></section>
-
   <article class="font">
-    <section class="text-over">
-      <h3 class="strong">JavaScript Prototypes</h3>
-      <ul>
-        <li>Prototypes are like Ruby class in JavaScript (JS)</li>
-        <li>They provide the characteristics and basic ground work for any instance object created from that prototype</li>
-      </ul>
-      <p>Two interrelated concepts: (i) protoype property and (ii) propertype attribute</p>
+    <section class="left box">
+      <div class="box-header">
+        <h3 class="strong">JavaScript Prototypes</h3>
+      </div>
+      <p><span>Basic idea:</span> Protoypes are like the Ruby class in JavaScript; they provide the characteristics and basic ground work for any instance object created from that prototype</p>
+      <p>Two interrelated concepts: (i) protoype property and (ii) prototype attribute</p>
+      <p><span>(i) Prototype property:</span> allows you to add properties/methods to an object</p>
         <ul>
-          <li><u>Prototype property:</u> allows you to add properties/methods to an object</li>
-            <li class= "list-indent">
-              <ul>
-                <li>Syntax: <code>object.protoype.name = value</code></li>
-                <li>object is the name of the object to add the property/method</li>
-                <li>prototype is standard syntax</li>
-                <li>name is the name of the new property/method</li>
-                <li>the value can be a function or other value (like an integer or string or array)</li>
-              </ul>
-            </li>
-          <li><u>Prototype attribute:</u> the characterisitc of the object; normally referred to as the <em>prototype object</em>, from which an instance object inherits its properties/methods</li>
-            <li class= "list-indent">
-              <ul>
-                <li>a prototype object is usually created as a constructor function, with various properties and attributes that can be passed down to instances of that prototype object</li>
-                <li>for example, the Array prototype object has certain properties/methods that are available to any new array object created</li>
-                <li>Constructor syntax: <code>function newConstructor () {}</code></li>
-                <li>New object syntax: <code>var newObject = new Constructor()</code></li>
-                <li>a constructor can take in arguments, which would be initialized when a new instance of the prototype object is created, and it can include properties/methods, each must be written as follows: <code>this.property = value</code> or <code>this.function = function (){}</code></li>
-              </ul>
-            </li>
-          </ul>
+          <li>Syntax: <code>object.prototype.name = value</code></li>
+          <li><code>object</code> is the name of the object to add the property/method</li>
+          <li><code>prototype</code> is standard syntax that refers to prototype for the object</li>
+          <li><code>name</code> is the name of the new property/method</li>
+          <li>the <code>value</code> can be a function or other value (like an integer or string or array)</li>
+        </ul>
+      <p><span>(ii) Prototype attribute:</span> the characterisitc of the object; normally referred to as the <em>prototype object</em>, from which an instance object inherits its properties/methods</p>
+        <ul>
+          <li>a prototype object is usually created as a constructor function, with various properties and attributes that can be passed down to instances of that prototype object</li>
+          <li class="list-indent">
+            <ul>
+              <li>for example, the <code>Array</code> prototype object has certain properties/methods that are available to any new array object created</li>
+            </ul>
+          </li>
+          <li>Constructor function syntax: <code>function newConstructorName () {}</code></li>
+          <li>New object syntax: <code>var newObject = new ConstructorName()</code></li>
+          <li>a constructor can take in arguments, which would be initialized when a new instance of the prototype object is created, and it can include properties/methods, each must be written as follows:</li>
+          <li class="list-indent">
+            <ul>
+              <li>Property: <code>this.propertyName = value</code></li>
+              <li>Function: <code>this.functionName = function (){}</code></li>
+            </ul>
+          </li>
+        </ul>
+
       <p>All inheritence is made possible through the prototype property</p>
         <ul>
           <li>A prototype object will pass down any properties/methods as part of that constructor function</li>
@@ -80,52 +67,40 @@
         </ul>
     </section>
 
-    <section class="text-over">
-      <h3 class="strong">JavaScript Objects</h3>
-      <p>Two types of objects: object literal and constructor functions</p>
+    <section class="right box">
+      <div class="box-header">
+        <h3 class="strong">JavaScript Objects</h3>
+      </div>
+      <p><span>Basic idea:</span> Objects contain property/value pairs that can point to a number of JavaScript objects, such as strings, arrays, and functions</p>
+      <p>Two types of objects: (i) object literal and (ii) constructor functions</p>
+      <p><span>(i) Object literal:</span> a way of creating an object that has property/value pairs; its prototype object is <code>Object</code></p>
         <ul>
-          <li><u>Object literal:</u> a way of creating an object that has property/value pairs; its prototype object is <code>Object</code></li>
-          <li class= "list-indent">
-            <ul>
-              <li>Syntax: <code>var newObj = { property1: value1, property2: value2 }</code></li>
-            </ul>
-          </li>
-          <li><u>Constructor function:</u> an object that is constructed as a function with property/value pairs; it can be a prototype object of its own</li>
-          <li class= "list-indent">
-            <ul>
-              <li>Syntax: <code>function newConstructor = { this.property1 = value1; this.property2 = value2 }</code></li>
-            </ul>
-          </li>
+          <li>Syntax: <code>var newObj = { property1: value1, property2: value2 }</code></li>
+        </ul>
+      <p><span>(ii) Constructor function:</span> an object that is constructed as a function with property/value pairs; it can be a prototype object of its own</p>
+        <ul>
+          <li>Syntax: <code>function newConstructor = { this.property1 = value1; this.property2 = value2 }</code></li>
         </ul>
       <p>Properties within objects can be assigned to objects themselves, as well as functions</p>
-      <p>Access a property's value by calling it on the object name</p>
+      <p>Two types of call notation: (i) dot notation and (ii) bracket notation (both apply to object literals and constructor functions</p>
+      <p><span>(i) Dot notation:</span> causes a literal call to occur where JS looks for the exact property name that is called on the object</p>
         <ul>
-          <li>Two types of call notation: dot notation and bracket notation (both apply to object literals and constructor functions</li>
-          <li class= "list-indent">
-            <ul>
-              <li><u>Dot notation:</u> causes a literal call to occur where JS looks for the exact property name that is called on the object</li>
-              <li class= "list-indent">
-                <ul>
-                  <li>Syntax: <code>objectName.propertyName</code></li>
-                  <li>if JS does not find the exact property name in the object, an error will be returned</li>
-                </ul>
-              </li>
-              <li><u>Bracket notation:</u> JS will evaluate the property name called and return the appropriate value based on that evaluation</li>
-              <li class= "list-indent">
-                <ul>
-                  <li>Syntax: <code>objectName["propertyName"]</code></li>
-                  <li>JS will either find the exact name in the object or, if the given property name points to another value, JS will move down the chain of values and see if that property name is in the object</li>
-                  <li><u>EX:</u> if we have a variable <code>var1</code> that is set equal to <code>property1</code> of our <code>newObj</code>, then if we call <code>newObj["var1"]</code>, JS will see that <code>var1</code> points to <code>property1</code>, which is in <code>newObj</code> and return the value</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li>Syntax: <code>objectName.propertyName</code></li>
+          <li>if JS does not find the exact property name in the object, an error will be returned</li>
+        </ul>
+      <p><span>(ii) Bracket notation:</span> JS will evaluate the property name called and return the appropriate value based on that evaluation</p>
+        <ul>
+          <li>Syntax: <code>objectName["propertyName"]</code></li>
+          <li>JS will either find the exact name in the object or, if the given property name points to another value, JS will move down the chain of values and see if that property name is in the object</li>
+          <li><u>EX:</u> if we have a variable <code>var1</code> that is set equal to <code>property1</code> of our <code>newObj</code>, then if we call <code>newObj[var1]</code>, JS will see that <code>var1</code> points to <code>property1</code>, which is in <code>newObj</code> and return the value</li>
         </ul>
     </section>
 
-    <section class="text-over">
-      <h3 class="strong">Further resources</h3>
-        <ul>
+    <section class="right box">
+      <div class="box-header">
+        <h3 class="strong">Further resources</h3>
+      </div>
+        <ul class="resources">
           <li><a href = "http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/">JavaScript Prototype in Plain Language</a></li>
           <li><a href = "http://www.w3schools.com/js/js_object_prototypes.asp">W3School's article on object prototypes</a></li>
           <li><a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype">Mozilla Developer Network definition of object prototype</li>
