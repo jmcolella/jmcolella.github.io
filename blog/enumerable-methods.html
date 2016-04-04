@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>John Colella | Blog Post </title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width"/>
   <link href='https://fonts.googleapis.com/css?family=Ubuntu%7COxygen:400,700' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post-template.css">
@@ -22,6 +22,12 @@
       </ul>
     </nav>
  </header>
+
+ <nav class="post-nav font">
+  <ul>
+    <li><a href="arrays-hashes.html">Previous Post</a> | <a href = "ruby-classes.html"> Next Post</a></li>
+  </ul>
+ </nav>
 
  <main>
 
@@ -90,7 +96,9 @@
       <p>
         Actually, hold up, let's back up a half step. The key thing to understand is that <code>Enumberable</code> has a slew of methods, all of which stem from <code>each</code>. The <code>each_slice</code> method is just one of them. We could also make use of methods like <code>first</code>, <code>find</code>, <code>map</code> and many others. Each one of these methods interacts with the defined <code>each</code> method in a different way and the all interact with collection objects (Arrays, Hashes, Ranges and Sets) in a different way. It's up to you to figure out the best one to use for the given task at hand.
       </p>
+      <p>
         So, <code>each_slice</code>. This guy is pretty cool. When called on an object, typically an array, it "slices" up that object and returns each of those "slices" as an array. Keeping with the theme of our <code>Pizza</code> class above, let's take a look at <code>each_slice</code> in action:
+      </p>
       <p>
         <code class="indent-code">supreme = Pizza.new</code>
         <code class="indent-code">supreme = ["sasauge", "broccoli", "mushrooms", "olives", "pepperoni", "peppers"]</code>
@@ -103,7 +111,9 @@
       <p>
         As you can see, we created an new instance of the <code>Pizza</code> class, <code>supreme</code>, and set that equal to an array of ingredients for a supreme pizza. We then called <code>each_slice</code> on that array <code>supreme</code> and got three new arrays, each with two items from the original <code>supreme</code> array. Why did we get three arrays of two? Well, as you can see, <code>each_slice</code> can take an integer as an argument, the value of which determines how many items the method will "slice" the array to which it is called. The code block following the method, to which it yields, then tells <code>each_slice</code> how to slice and what to do with it. In our case, we told <code>each_slice</code> that for each slice of ingredients (<code>|ingredients|</code>) print the ingridents to the console (<code>p ingredients</code>). This is an incredibly useful <code>Enumerable</code> method for grouping items in an array, or just breaking down an array to make it more manageable; the uses can be endless.
       </p>
+      <p>
         To reiterate the point made in the section above, our use of <code>each_slice</code> in the supreme example does not work if <code>each</code> is not defined in the <code>Class</code> to which the object belongs. It is essential to have <code>each</code> in order for any <code>Enumerable</code> method to be called and used.
+      </p>
     </section>
 
     <section class="text-over">
@@ -115,15 +125,11 @@
     </article>
   </main>
 
-<!-- Footer is no longer at the bottom of each page, it has been moved to the contact section -->
-<!-- <footer class="foot-container">
-  <p class="foot-links">
-    <a href="https://github.com/jmcolella"><img class="icon" src="../imgs/github.png" alt="Github"></a>
-    <a href="https://www.linkedin.com/in/john-colella-61597775"><img class="icon" src="../imgs/linkedin.png" alt="Linkedin"></a>
-    <a href="https://www.facebook.com/john.colella.9"><img class="icon" src="../imgs/facebook.png" alt="Facebook"></a>
-    <a href="mailto:colella.john@gmail.com"><img class="icon" src="../imgs/email.png" alt="E-Mail"></a>
-  </p>
- </footer> -->
+  <nav class="post-nav font">
+   <ul>
+    <li><a href = "index.html">Blog index</a></li>
+   </ul>
+  </nav>
 
 </body>
 </html>
