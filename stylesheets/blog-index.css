@@ -7,11 +7,6 @@ main {
   padding-top: 2em;
 }
 
-#line {
-  border-top: 1px solid #103d6f;
-  margin-left: 2em;
-}
-
 .blog-links {
   font-family: 'Ubuntu', sans-serif;
   margin-left: 10em;
@@ -27,16 +22,6 @@ main {
   text-align: center;
 }
 
-.blog-link a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-span {
-  display: block;
-}
-
 .blog-links td:hover {
   background-color: #6fbf64;
   border: 1px solid #6fbf64;
@@ -50,21 +35,29 @@ span {
   color: white;
 }
 
-
-
-/*Entire header section has been removed*/
-/*.top {
-  display: block;
-  position: static;
-  margin-left: 2em;
-  color: #103d6f;
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  table, tbody, tr, td {
+    display: block;
+  }
 }
 
-#top-title {
-  font-family: 'Ubuntu', sans-serif;
+@media only screen and (max-width: 450px) {
+  .blog-links {
+    margin-left: 0em;
+    border-spacing: 1em;
+  }
+  .blog-links td {
+    padding: 2em;
+    font-size: .5em;
+  }
 }
 
-sub-title {
-/*  font-size: 1em;
-  font-family: 'Ubuntu', sans-serif;*/
-/*}*/
+@media only screen and (max-width: 800px) {
+  .blog-links {
+    margin-left: 0em;
+    border-spacing: 1em;
+  }
+  .blog-links td {
+    padding: 3em;
+  }
+}
