@@ -1,10 +1,20 @@
-body {
+header {
   background-image: none;
   /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
+  height: 5em;
+}
+
+header a {
+  color: #103d6f;
 }
 
 main {
   padding-top: 2em;
+}
+
+.blog-links a {
+  transition: none;
+  color: #103d6f;
 }
 
 .blog-links {
@@ -23,6 +33,7 @@ main {
 }
 
 .blog-links td:hover {
+  transition: background-color .5s ease;
   background-color: #6fbf64;
   border: 1px solid #6fbf64;
 }

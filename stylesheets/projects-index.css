@@ -1,16 +1,28 @@
-body {
-  background-image: none;
-  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
+#projects-head-text {
+  clear: both;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 2em;
 }
 
-main {
-  padding-top: 2em;
+#projects-head-text > h2 {
+  color: #6fbf64;
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: -.2em;
+}
+
+#projects-head-text > h3 {
+  color: #103d6f;
+  font-size: 1em;
 }
 
 .project-links {
   font-family: 'Ubuntu', sans-serif;
   margin: auto;
   border-spacing: 3em;
+  padding-right: .5em;
+  margin-bottom: 2em;
 }
 
 .project-links td {
@@ -20,8 +32,13 @@ main {
   color: #6fbf64;
   text-align: center;
 }
+.project-links a {
+  transition: none;
+  color: #103d6f;
+}
 
 .project-links td:hover {
+  transition: background-color 0.5s ease;
   background-color: #6fbf64;
   border: 1px solid #6fbf64;
 }

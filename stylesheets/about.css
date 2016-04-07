@@ -1,14 +1,14 @@
-body {
-  background-image: none;
-  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
+#about {
+  display: block;
+  /*border-bottom: 3em solid #6fbf64;*/
 }
 
 #image {
   display: inline-block;
-  position: fixed;
+  position: relative;
   float: left;
   width: 35%;
-  margin-top: 2em;
+  margin-top: 5em;
   margin-left: 3em;
   text-align: center;
 }
@@ -20,6 +20,19 @@ img {
   margin: auto;
 }
 
+.resume-link a {
+  color: #103d6f;
+  text-decoration: none;
+}
+
+.resume-link a:visited {
+  color: #103d6f;
+}
+
+.resume-link a:hover {
+  color: #6fbf64;
+}
+
 .font {
     font-family: 'Ubuntu', sans-serif;
     color: #103d6f;
@@ -27,32 +40,27 @@ img {
 
 .text {
   display:inline-block;
-  position: relative:;
+  position: relative;
   float: right;
   width: 49%;
   border: 2px solid #6fbf64;
-  margin-right: 9em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-right: 6em;
+  margin-top: 5em;
+  margin-bottom: 4em;
 
 }
 
-#head-text {
+#about-head-text {
   font-weight: bolder;
   font-size: 1.5em;
   text-align: center;
   color: #6fbf64;
-  /*border-bottom: 1px solid #103d6f;*/
 }
 
 #about-text {
-  margin-left: 5em;
-  margin-right: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
   text-align: justify;
-}
-
-strong {
-  color: #6fbf64;
 }
 
 
