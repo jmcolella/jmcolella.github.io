@@ -1,14 +1,19 @@
-body {
-  background: url(../imgs/bklyn-bridge.jpeg) no-repeat fixed;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+header {
+  background-image: url(../imgs/bklyn-bridge.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  height: 45em;
+  width: 100%;
+  padding-right: 1em;
+  margin-left: -.5em;
+  display: block;
 }
 
-body {
-  /*background: linear-gradient(to left, rgba(111, 191, 100, .40), rgba(16, 61, 111, .25));*/
-}
+/*HEADER STYLE*/
 
 .head-container {
   display: block;
@@ -18,7 +23,6 @@ body {
   position: relative;
   top: 0;
   margin-top: -.5em;
-  margin-left: -.5em;
   padding-right: 1em;
 }
 
@@ -28,12 +32,11 @@ nav {
 
 h1 {
   display: inline-block;
-  /*position: absolute;*/
   top: 0;
   left: 1em;
   font-size: 2em;
   font-family: 'Oxygen', sans-serif;
-  margin: .75em .75em .75em .75em;
+  margin: .75em .75em .75em 1.5em;
 }
 
 .head-links {
@@ -51,8 +54,13 @@ h1 {
   margin: 1em 1em 1em 1em;
 }
 
+#last-nav {
+  margin-right: 2em;
+}
+
 #current-page a:visited {
   color: #103d6f;
+  /*color:#6fbf64;*/
 }
 
 a {
@@ -68,25 +76,69 @@ a:visited {
 
 a:hover {
   /*color: #6fbf64;*/
+  transition: color 0.5s ease;
   color: #103d6f;
 }
 
-/*
-.main-image {
+#index-text {
   display: block;
   position: relative;
   width: 100%;
-  margin: auto;
+  text-align: center;
+  margin-left: .5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 7em;
 }
 
-img {
-  display: block;
-  position: relative;
-  margin: auto;
+#index-text > h2 {
+  color: white;
+  font-size: 1.25em;
+  margin-bottom: -3em;
+}
+
+#index-text > #big-index-text {
+  color: #6fbf64;
+  font-size: 4em;
+}
+
+/*ABOUT SECTION STYLE*/
+
+#about {
+  height: 750px;
   width: 100%;
-  max-height: 50%;
-  /*bottom: 0;*/
-}*/
+}
+
+/*PROJECT SECTION STYLE*/
+
+#projects {
+  height: 750px;
+  width: 100%;
+  border-top: 5em solid #6fbf64;
+  padding-right: 1em;
+  margin-left: -.5em;
+  margin-bottom: 2em;
+}
+
+/*CONTACT SECTION STYLE*/
+
+#contact {
+  height: 680px;
+  width: 100%;
+  border-top: 5em solid #6fbf64;
+  padding-right: 1em;
+  margin-left: -.5em;
+}
+
+/*COPYRIGHT STYLE*/
+
+#copyright {
+  color: #6fbf64;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  margin-left: -.5em;
+  padding-right: 1em;
+  margin-top: -2em;
+}
 
 @media screen and (max-width: 450px) {
   h1 {
