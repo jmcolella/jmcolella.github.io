@@ -1,11 +1,68 @@
-header {
-  background-image: none;
-  /*background: linear-gradient(to left, rgba(157, 166, 176, .40), rgba(157, 166, 176, 0));*/
-  height: 5em;
+.head-container {
+  display: block;
+  background-color: rgba(157, 166, 176, .25);
+  box-shadow: .15em .15em .25em gray;
+  width:100%;
+  position: relative;
+  top: 0;
+  margin-top: -.5em;
+  margin-left: -.5em;
+  padding-right: 1em;
+
 }
 
-header a {
+nav {
+  overflow: auto;
+}
+
+h1 {
+  display: inline-block;
+  top: 0;
+  left: 1em;
+  font-size: 2em;
+  font-family: 'Oxygen', sans-serif;
+  margin: .75em .75em .75em 1.5em;
+}
+
+.head-links {
+  display: inline-block;
+  position: absolute;
+  top: .5em;
+  right: 0em;
+  list-style: none;
+}
+
+.head-links li {
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 1em 1em 1em 1em;
+}
+
+#last-nav {
+  margin-right: 2em;
+}
+
+#current-page a:visited {
+  /*color: #103d6f;*/
+  color:#6fbf64;
+}
+
+a {
+  text-decoration: none;
   color: #103d6f;
+  /*color: white;*/
+}
+
+a:visited {
+  color: #103d6f;
+  /*color: white;*/
+}
+
+a:hover {
+  color: #6fbf64;
+  transition: color 0.5s ease;
+  /*color: #103d6f;*/
 }
 
 main {

@@ -140,7 +140,8 @@ a:hover {
   margin-top: -2em;
 }
 
-@media screen and (max-width: 450px) {
+/*MEDIA QUERIES*/
+/*@media screen and (max-width: 450px) {
   h1 {
     font-size: .75em;
   }
@@ -161,7 +162,7 @@ a:hover {
     font-size: .5em;
     margin: .25em .25em .25em .25em;
   }
-}
+}*/
 
 
 
