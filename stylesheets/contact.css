@@ -3,6 +3,10 @@
     color: #103d6f;
 }
 
+form {
+  margin-top: 2em;
+}
+
 fieldset {
   border: 2px solid #6fbf64;
   width: 40em;
