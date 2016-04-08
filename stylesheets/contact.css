@@ -52,6 +52,8 @@ fieldset > textarea {
 }
 
 #send-button:hover {
+  transition: color .5s ease;
+  transition: background-color .5s ease;
   background-color: #6fbf64;
   color: white;
 }
