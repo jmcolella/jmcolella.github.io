@@ -26,7 +26,14 @@ fieldset > .input-field {
   margin-bottom: 2em;
   height: 2em;
   width: 20em;
-  border: 1px solid #6fbf64;
+  border: none;
+  border-bottom: 1px solid #6fbf64;
+}
+
+fieldset > .input-field:focus {
+  outline: none;
+  transition: border-bottom .5s ease;
+  border-bottom: 1px solid #103d6f;
 }
 
 fieldset > textarea {
@@ -39,6 +46,12 @@ fieldset > textarea {
   border: 1px solid #6fbf64;
   /*color: #103d6f;*/
   font-family: 'Oxygen', sans-serif;
+}
+
+fieldset > textarea:focus {
+  outline: none;
+  transition: border .5s ease;
+  border: 1px solid #103d6f;
 }
 
 #send-button {
@@ -80,6 +93,11 @@ fieldset > textarea {
 :-ms-input-placeholder {
    /*color: #103d6f;*/
    font-family: 'Oxygen', sans-serif;
+}
+
+#send-button:focus {
+  outline: none;
+  border: 2px solid #6fbf64;
 }
 
 
