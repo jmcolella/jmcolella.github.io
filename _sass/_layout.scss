@@ -1,0 +1,424 @@
+.home-div {
+    background-image: url('/assets/imgs/home-background-image.jpeg');
+    background-size: cover;
+    padding-top: -20%;
+    background-attachment: fixed;
+    background-position: center;
+    height: 95vh;
+    text-align: center;
+}
+
+.home-text {
+    display: block;
+    text-align: center;
+    padding: 40vh;
+}
+
+.home-text > h2 {
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.home-text #brooklyn-heading {
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6fbf64;
+}
+
+.about-container {
+    height: 80vh;
+}
+
+.my-picture {
+    height: 200px;
+    width: 200px;
+    float: left;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #6fbf64;
+    border-radius: 2%;
+}
+
+.my-picture a {
+    color: $grey-color;
+}
+
+.my-picture a:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.my-picture p {
+    padding-top: 5px;
+}
+
+.about-text {
+    margin-left: 15em;
+    color: $grey-color-dark;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+.about-title {
+    color: #6fbf64;
+}
+
+.contact-picture {
+    height: 300px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    border: 2px solid #6fbf64;
+    border-radius: 2%;
+}
+
+.contact-picture img {
+    height: 300px;
+    width: 300px
+}
+
+.contact-info {
+    height: 50vh;
+}
+
+p > .contact-links {
+    color: $grey-color;
+}
+
+.contact-links:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.resume-link {
+    color: $grey-color-dark;
+}
+
+.resume-link:visited {
+    color: $grey-color-dark;
+}
+
+.resume-link:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.project-container {
+    padding: 1em;
+    border: 2px solid $grey-color;
+    margin-bottom: 1em;
+    ont-family: 'Oxygen', sans-serif;
+}
+
+.project-container p {
+    color: $grey-color-dark;
+}
+
+.project-container a {
+    color: $grey-color;
+}
+
+.project-container a:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.project-container h1 {
+    color: #6fbf64;
+}
+
+.code-links {
+    font-size: .75em;
+    margin-top: -.5em;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    font-family: 'Ubuntu', sans-serif;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-title:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
+        }
+    }
+}
+
+.site-nav .page-link:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+    color: #6fbf64;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+.footer-email {
+    color: $grey-color;
+}
+
+.footer-email:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.social-media-list a {
+    color: $text-color;
+}
+
+.social-media-list a:hover {
+    text-decoration: none;
+    color: #6fbf64;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
