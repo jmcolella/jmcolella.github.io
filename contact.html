@@ -1,54 +1,14 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+title: contact
+permalink: /contact/
+---
 
-<head>
-  <title>John Colella | Contact</title>
-  <meta charset="UTF-8" name="viewport" content="width=device-width"/>
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu%7COxygen:400,700' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="stylesheets/default.css">
-  <link type="text/css" rel="stylesheet" href="stylesheets/contact.css">
-</head>
+<div class="contact-info">
+  <p>let's chat!</p>
 
-<body>
+  <p>send me a message at <a class="contact-links" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 
- <header class="head-container">
-     <nav>
-      <h1><a href="index.html">John Colella</a></h1>
-      <ul class="head-links">
-        <li class="nav-reg"><a href="index.html">Home</a></li>
-        <li class="nav-reg"><a href="#">Resume</a></li>
-        <li class="nav-reg"><a href="#">Projects</a></li>
-        <li class="nav-reg"><a href="blog/index.html">Blog</a></li>
-        <li class="nav-reg"><a href="about.html">About</a></li>
-        <li class="nav-reg"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
- </header>
+  <p>connect with me on <a class="contact-links" href="https://linkedin.com/in/{{ site.linkedin_username }}">Linkedin</a> and see my work on <a class="contact-links" href="https://github.com/{{ include.username }}">Github</a></p>
+</div>
 
- <form>
-   <fieldset>
-    <legend>Send me an email</legend>
-    <input class="input-field" type="text" placeholder="Name">
-    <input class="input-field" type="email" placeholder="E-mail address">
-    <input class="input-field" type="text" placeholder="Subject">
-    <textarea name="comment">Add your message here</textarea>
-    <input id="send-button" type="submit" name="submit" value="Send">
-   </fieldset>
- </form>
-
- <section class="social-buttons-container">
-  <p class="social-links">
-    <a href="https://github.com/jmcolella"><img class="icon" src="imgs/github.png" alt="Github"></a>
-    <a href="https://www.linkedin.com/in/john-colella-61597775"><img class="icon" src="imgs/linkedin.png" alt="Linkedin"></a>
-    <a href="https://www.facebook.com/john.colella.9"><img class="icon" src="imgs/facebook.png" alt="Facebook"></a>
-    <a href="https://www.instagram.com/beerpants/"><img class="icon" src="imgs/Instagram.png" alt="Instagram"></a>
-  </p>
- </section>
-
-
-<!--  <section id="address">
-  <p>John Colella <br> 750 Ocean Avenue, Apt. 5G <br> Brooklyn, New York 11226</p>
- </section> -->
-
-</body>
-</html>
