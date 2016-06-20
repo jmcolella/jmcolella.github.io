@@ -1,0 +1,19 @@
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-header">Contact</h2>
+                <p>connect with me on Linkedin, see my work on Github or contact me directly</p>
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-4x"></i></a>
+                    </li>
+                    {% endfor %}
+                    <li>
+                        <a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o fa-4x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>

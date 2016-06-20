@@ -1,13 +1,16 @@
 - title: Localeyes
   live_url: https://www.localeyestrips.com
   source_url: https://github.com/jmcolella/Localeyes
+  img: ../img/localeyes-img.jpg
   description: A web app that connects tourists to day trips currated by locals. Developed and produced in 7 days along with Christyn Budzyna, Hanna Taylor and Elan Kvitko. The app was built with Ruby on Rails and Materialize and utilizes the Google Maps and Google Places APIs to generate major data for the site.
 
 - title: Lower East Side Film Festival
   live_url: https://www.les-film-festival.herokuapp.com
   source_url: https://github.com/jmcolella/les-film-festival
+  img: ../img/les-film.jpg
   description: A fake film festival website that allows users to view and rate films, similar to the features of IMDB. Developed in 2 days with Esther Leytush and Katherine Broner. Built with Ruby on Rails and Bootstrap frameworks. Incorporates JavaScript and the JQuery library to enahcne user experience.
 
 - title: 2048 Clone
   source_url: https://github.com/jmcolella/2048-clone
+  img: ../img/256-img.jpg
   description: Use vanilla JavaScript along with the JQuery and Underscore.js libraries to build a clone of the popular game 2048.
