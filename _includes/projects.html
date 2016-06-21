@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
           {% for project in site.data.projects %}
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 project-container">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-container">
             <h1 class="project-title">{{ project.title }}</h1>
             {% if project.live_url %}
             <p class="code-links"><a href="{{ project.live_url }}">live site</a> // <a href="{{ project.source_url }}">source code</a></p>
