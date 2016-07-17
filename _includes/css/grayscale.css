@@ -293,6 +293,11 @@ a:focus {
     margin-bottom: 2em;
 }
 
+@media(min-width: 655px) and (max-width: 767px) {
+    #about {
+        padding-top: 6em;
+    }
+}
 #about-text {
     text-align: justify;
 }
