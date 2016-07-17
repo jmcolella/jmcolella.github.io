@@ -111,7 +111,7 @@ a:focus {
     background-color: rgba(111,191,100,.3);
 }
 
-@media(max-width: 736px) {
+@media(max-width: 767px) {
     .navbar-custom .navbar-brand {
         color: #6fbf64;
     }
@@ -196,6 +196,13 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 25px;
+    }
+}
+
+@media(max-width: 767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
     }
 }
 
