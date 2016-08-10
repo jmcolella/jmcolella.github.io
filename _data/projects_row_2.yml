@@ -1,0 +1,11 @@
+- title: Lower East Side Film Festival
+  live_url: https://www.les-film-festival.herokuapp.com
+  source_url: https://github.com/jmcolella/les-film-festival
+  img: ../img/les-film.jpg
+  description: A fake film festival website that allows users to view and rate films, similar to the features of IMDB. Developed in 2 days with Esther Leytush and Katherine Broner. Built with Ruby on Rails and Bootstrap frameworks. Incorporates JavaScript and the JQuery library to enahcne user experience.
+
+- title: Kim Marra professional website
+  live_url: kimmarra.com
+  source_url: https://github.com/jmcolella/kimmarra.github.io
+  img: ../img/les-film.jpg
+  description: Design and build website for artist Kim Marra. Implement HTML5, CSS3, along with the Bootstrap 3 framework. Utilize the jQuery library to write custom JavaScript actions, including automatic scroll on the landing page.
