@@ -9,18 +9,3 @@
   source_url: https://github.com/jmcolella/hopsearch
   img: n/a
   description: HopSearch allows users to search for numerous hop varietals to learn more about their attributes. The app utilizes information from the BreweryDB API along with the Google Maps API to display a map with markers pinpointing some of the major hop growing regions around the world. HopSearch is built on Rails 4 with React.js front end views. Bootstrap 3 was used as the front end framework along with additional custom CSS styling and JavaScript functionality.
-
-- title: Lower East Side Film Festival
-  live_url: https://www.les-film-festival.herokuapp.com
-  source_url: https://github.com/jmcolella/les-film-festival
-  img: ../img/les-film.jpg
-  description: A fake film festival website that allows users to view and rate films, similar to the features of IMDB. Developed in 2 days with Esther Leytush and Katherine Broner. Built with Ruby on Rails and Bootstrap frameworks. Incorporates JavaScript and the JQuery library to enahcne user experience.
-
-- title: 256 - A 2048 Clone
-  source_url: https://github.com/jmcolella/2048-clone
-  img: ../img/256-img.jpg
-  description: Use vanilla JavaScript along with the JQuery and Underscore.js libraries to build a clone of the popular game 2048.
-
-# - title: JavaScript Games
-#   source_url: https://github.com/jmcolella/javascript-games
-#   description: Use vanilla JavaScript along with the JQuery and Underscore.js libraries to build the games Connect Four and Tic Tac Toe. Institute principles of Object-Oriented JavaScript to maintain state and determine logic for winning each game.
