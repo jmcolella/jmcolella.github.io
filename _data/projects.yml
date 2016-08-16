@@ -1,5 +1,5 @@
 - title: Localeyes
-  live_url: https://www.localeyestrips.com
+  live_url: http://www.localeyestrips.com
   source_url: https://github.com/jmcolella/Localeyes
   img: ../img/localeyes-img.jpg
   description: A web app that connects tourists to day trips currated by locals. Developed and produced in 7 days along with Christyn Budzyna, Hanna Taylor and Elan Kvitko. The app was built with Ruby on Rails and Materialize and utilizes the Google Maps and Google Places APIs to generate major data for the site.
