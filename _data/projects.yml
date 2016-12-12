@@ -1,8 +1,7 @@
-- title: Localeyes
-  live_url: http://www.localeyestrips.com
-  source_url: https://github.com/jmcolella/Localeyes
+- title: React Boilerplate
+  source_url: https://github.com/jmcolella/react-webpack-boilerplate
   img: ../img/localeyes-img.jpg
-  description: A web app that connects tourists to day trips currated by locals. Developed and produced in 7 days along with Christyn Budzyna, Hanna Taylor and Elan Kvitko. The app was built with Ruby on Rails and Materialize and utilizes the Google Maps and Google Places APIs to generate major data for the site.
+  description: Boilerplate set up for React apps. Features Webpack, ES6 syntax, ESLint, Redux capabilities and test suite with Karma, Mocha, Chai and Enzyme.
 
 - title: HopSearch
   live_url: https://hopsearch.herokuapp.com/
