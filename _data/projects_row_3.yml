@@ -1,9 +1,0 @@
-- title: 256 - A 2048 Clone
-  live_url: http://john-colella.com/2048-clone/
-  source_url: https://github.com/jmcolella/2048-clone
-  img: ../img/256-img.jpg
-  description: Use vanilla JavaScript along with the JQuery and Underscore.js libraries to build a clone of the popular game 2048.
-
-- title: JavaScript Games
-  source_url: https://github.com/jmcolella/javascript-games
-  description: Use vanilla JavaScript along with the JQuery and Underscore.js libraries to build the games Connect Four and Tic Tac Toe. Institute principles of Object-Oriented JavaScript to maintain state and determine logic for winning each game.
