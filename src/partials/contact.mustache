@@ -1,0 +1,19 @@
+<div id="contact">
+  <div class="container">
+    <div class="section">
+      <div class="contact-container">
+        <h1 class="contact-title">Get in touch</h1>
+
+        <a class="contact-email" href="mailto:{{site.email}}">{{site.email}}</a>
+
+        <div class="contact-logos">
+          {{#site.contact}}
+            <a href="{{link}}" target="_blank"><i class="fa fa-2x fa-{{type}}" aria-hidden="true"></i></a>
+          {{/site.contact}}
+        </div>
+
+        <p>{{site.title}} | 2018</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+/* CONTAINERS */
+.container {
+  font-family: $primary-font;
+  height: 100%;
+  margin: 0 auto;
+  max-width: rem-calc(1280px);
+  text-align: center;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  height: 100%;
+  padding: 0 size-unit();
+  width: 100%;
+}
+
+/* PARALLAX */
+.parallax {
+  background: transparent;
+  height: 300px;
+  width: 100%;
+}
+
+
+@media #{$tablet} {
+  .section {
+    padding: 0 size-unit(2);
+  }
+}
+
+@media #{$desktop} {
+  .section {
+    padding: 0 size-unit(2.5);
+  }
+}

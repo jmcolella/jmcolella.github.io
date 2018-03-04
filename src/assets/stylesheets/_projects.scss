@@ -1,0 +1,124 @@
+#projects {
+  margin-top: size-unit(3.5);
+}
+
+.projects-container {
+  .projects-header {
+    border-bottom: 1px solid $lime-green;
+    margin-bottom: size-unit(2);
+    padding-bottom: size-unit();
+    text-align: center;
+
+    h1 {
+      font-size: size-unit(1.5);
+    }
+  }
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .project {
+      flex-grow: 1;
+      margin-bottom: size-unit(1.5);
+      position: relative;
+    }
+
+    .project-wrapper {
+      align-items: center;
+      border: 1px solid $gray;
+      box-shadow: 1px 2px 1px 1px $gray;
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      padding: size-unit();
+    }
+
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-align: left;
+
+      .project-info-text {
+        margin-bottom: size-unit(.75);
+      }
+
+      .info-title {
+        font-size: size-unit();
+        font-weight: 600;
+        margin-bottom: size-unit();
+      }
+
+      .info-text {
+        font-size: size-unit(.75);
+        margin-bottom: size-unit(.5);
+      }
+
+      .tech {
+        font-size: size-unit(.5);
+
+        &-title {
+          color: $lime-green;
+        }
+      }
+    }
+
+    .project-links {
+      display: flex;
+      margin-top: auto;
+
+      .source-link,
+      .live-link {
+        border-radius: 5%;
+        display: flex;
+        font-size: size-unit(.75);
+        margin-right: size-unit(.5);
+        padding: size-unit(.25) size-unit(.75);
+        text-decoration: none;
+        transition: color 0.5s ease, background-color 0.5s ease;
+      }
+
+      .live-link {
+        border: 1px solid $black;
+        color: $black;
+
+        &:hover {
+          color: $white;
+          background-color: $black;
+        }
+      }
+
+      .source-link {
+        border: 1px solid $lime-green;
+        color: $lime-green;
+
+        &:hover {
+          color: $white;
+          background-color: $lime-green;
+        }
+      }
+    }
+
+    .project-img {
+      display: none;
+
+      img {
+        width: rem-calc(350px);
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  .projects-container {
+    .projects-list {
+      .project-img {
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@mixin link {
+  color: $black;
+  font-size: size-unit();
+  text-decoration: underline;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $lime-green;
+  }
+}

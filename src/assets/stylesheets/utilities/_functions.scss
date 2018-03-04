@@ -1,0 +1,11 @@
+@function size-unit($mult: 1) {
+  $baseMultSize: $base-unit * $mult;
+
+  $remSize: $baseMultSize / $base-rem;
+
+  @return #{$remSize}rem;
+}
+
+@function rem-calc($value) {
+  @return #{$value / $base-rem}rem;
+}

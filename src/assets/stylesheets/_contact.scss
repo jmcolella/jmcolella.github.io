@@ -1,0 +1,42 @@
+#contact {
+  margin: size-unit(3.5) 0 size-unit();
+}
+
+.contact-container {
+  width: 100%;
+
+  .contact-title {
+    font-size: size-unit(1.5);
+    font-weight: 600;
+    margin-bottom: size-unit(1.5);
+  }
+
+  .contact-email,
+  .contact-logos {
+    max-width: rem-calc(360px);
+  }
+
+  .contact-email {
+    @include link;
+
+    display: block;
+    margin: 0 auto size-unit();
+    text-decoration: none;
+  }
+
+  .contact-logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto size-unit(2);
+
+    a {
+      @include link;
+
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    font-size: size-unit(.5);
+  }
+}
