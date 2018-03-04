@@ -1,0 +1,16 @@
+$mobile-upper: 47.9375em;  // 767px
+$tablet-lower: 48em;  // 768px
+$tablet-upper: 64em;  // 1024px
+$desktop-lower: 64.0625em; // 1025px
+$desktop-upper: 80em; // 1280px
+
+$screen: 'only screen';
+
+$landscape: '#{$screen} and (orientation: landscape)';
+$portrait: '#{$screen} and (orientation: portrait)';
+
+$mobile: $screen;
+$mobile-only: '#{$screen} and (max-width: #{$mobile-upper})';
+$tablet: '#{$screen} and (min-width:#{$tablet-lower})';
+$tablet-only: '#{$screen} and (min-width:#{$tablet-lower}) and (max-width:#{$tablet-upper})';
+$desktop: '#{$screen} and (min-width:#{$desktop-lower})';

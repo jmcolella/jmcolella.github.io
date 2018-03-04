@@ -1,0 +1,45 @@
+<div id="projects">
+  <div class="container">
+    <div class="section">
+      <div class="projects-container">
+        <div class="projects-header">
+          <h1>Projects</h1>
+        </div>
+
+        <div class="row projects-list">
+          {{#projects}}
+
+          <div class="project column-m-12 column-t-6">
+            <div class="project-wrapper">
+              <div class="project-info">
+                <div class="project-info-text">
+                  <h2 class="info-title">{{title}}</h2>
+                  <p class="info-text">{{description}}</p>
+                  <div class="tech">
+                    <p class="tech-title">Tech</p>
+                    <p>{{tech}}</p>
+                  </div>
+                </div>
+
+                <div class="project-links">
+                  {{#live_url}}
+                  <a class="live-link" href="{{live_url}}" target="_blank">Live</a>
+                  {{/live_url}}
+                  <a class="source-link" href="{{source_url}}" target="_blank">Code</a>
+                </div>
+              </div>
+
+              {{#img}}
+              <div class="project-img">
+                <img alt="{{title}}" src="{{img}}" />
+              </div>
+              {{/img}}
+            </div>
+          </div>
+
+          {{/projects}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
