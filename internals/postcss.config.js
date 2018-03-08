@@ -4,7 +4,6 @@ import autoprefixer from 'autoprefixer';
 import autoreset from 'postcss-autoreset';
 import postcssImport from 'postcss-import';
 import url from 'postcss-url';
-import cssnano from 'cssnano';
 
 const config = {
   plugins: [
@@ -18,9 +17,8 @@ const config = {
     url({
       url: 'inline',
     }),
-    cssnano(),
   ],
-  extract: process.env.PRODUCTION,
+  extract: true,
   config: false,
 }
 
