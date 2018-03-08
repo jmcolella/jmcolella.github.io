@@ -7,14 +7,13 @@ import baseConfig from './rollup.config.js';
 
 const basePlugins = [
   copy({
-    'src/assets/img': 'img/',
     'dist/index.html': 'index.html',
     verbose: true,
   }),
   uglify({}, minify),
 ];
 
-if (process.env.SERVE_BUILD) {
+if (process.env.SERVE_PRODUCTION) {
   basePlugins.concat([
     serve({
       contentBase: './',
