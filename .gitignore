@@ -4,3 +4,5 @@ dist/
 
 true
 
+internals/compressImages.js
+
