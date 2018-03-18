@@ -26,16 +26,19 @@ module.exports = {
   ],
   contact: [
     {
+      icon: 'https://s3.amazonaws.com/jc-website-assets/github.svg',
       type: 'github',
       username: 'jmcolella',
       link: 'https://github.com/jmcolella',
     },
     {
+      icon: 'https://s3.amazonaws.com/jc-website-assets/linkedin.svg',
       type: 'linkedin',
       username: 'johnmcolella',
       link: 'https://linkedin.com/in/johnmcolella',
     },
     {
+      icon: 'https://s3.amazonaws.com/jc-website-assets/instagram.svg',
       type: 'instagram',
       username: 'beerpants',
       link: 'https://instagram.com/beerpants',
