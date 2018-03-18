@@ -544,7 +544,8 @@ h1 {
       font-size: 1.5rem;
       text-decoration: underline;
       transition: color 0.5s ease;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: fill 0.5s ease; }
       .contact-container .contact-logos a:hover {
         color: #6fbf64; }
       .contact-container .contact-logos a:hover {
